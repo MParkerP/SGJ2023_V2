@@ -9,11 +9,19 @@ using System;
 public class GameManager : NetworkBehaviour
 {
     [SerializeField] private UnityEvent onGameSceneLoaded;
+    [SerializeField] private UnityEvent onConnectedToHost;
 
     private void Awake()
     {
-        //when the game manager wakes, add the event onGameSceneLoaded to the callback for the network onloadeventcompleted delegate
-        NetworkManager.Singleton.SceneManager.OnLoadEventCompleted +=
-                (string sceneName, LoadSceneMode loadSceneMode, List<ulong> clientsCompleted, List<ulong> clientsTimedOut) => { onGameSceneLoaded?.Invoke(); };
+        if (NetworkManager is not null)
+        {
+            //when the game manager wakes, add the event onGameSceneLoaded to the callback for the network onloadeventcompleted delegate
+            NetworkManager.Singleton.SceneManager.OnLoadEventCompleted +=
+                        (string sceneName, LoadSceneMode loadSceneMode, List<ulong> clientsCompleted, List<ulong> clientsTimedOut) => { onGameSceneLoaded?.Invoke(); };
+
+            NetworkManager.Singleton.OnClientConnectedCallback += (ulong number) => { onConnectedToHost?.Invoke(); };
+        }
+
     }
+
 }

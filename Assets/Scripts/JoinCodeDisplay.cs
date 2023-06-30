@@ -4,13 +4,13 @@ using TMPro;
 using Unity.Netcode;
 using UnityEngine;
 
-public class JoinCodeDisplay : MonoBehaviour
+public class JoinCodeDisplay : NetworkBehaviour
 {
     [SerializeField] private TextMeshProUGUI codeDisplay;
 
-    public void SetJoinCodeDisplay()
+    public override void OnNetworkSpawn()
     {
-        Debug.Log(Static_LobbyData.LobbyCode);
         codeDisplay.text = Static_LobbyData.LobbyCode;
+        base.OnNetworkSpawn();
     }
 }
