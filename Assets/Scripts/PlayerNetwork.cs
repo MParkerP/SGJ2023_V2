@@ -78,7 +78,7 @@ public class PlayerNetwork : NetworkBehaviour
     }
 
     //allow player to carry torch object
-    private void GrabTorch()
+    private async void GrabTorch()
     {
         //get the colliders from a radius around the player (should only be one)
         Collider2D[] torchesHit = Physics2D.OverlapCircleAll(grabPoint.transform.position, grabRadius, torchLayer);
@@ -104,19 +104,21 @@ public class PlayerNetwork : NetworkBehaviour
             {
 
                 ObtainObjectOwnershipServerRpc("Torch(Clone)");
+                await Task.Delay(10);
             }
 
             if (torchRb != null)
             {
                 //ensure torch does not have to float to its position and is not exerting mass to player
-                torch.transform.position = this.transform.position + new Vector3(-0.75f, 0.4f);
+                torch.transform.position = this.transform.position + new Vector3(-0.5f, 0.4f);
+                torch.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 torchRb.mass = 0;
 
                 //create and set the joint before connecting to the torch
                 RelativeJoint2D joint = this.AddComponent<RelativeJoint2D>();
                 joint.enableCollision = false;
                 joint.autoConfigureOffset = false;
-                joint.linearOffset = new Vector2(-0.75f, 0.4f);
+                joint.linearOffset = new Vector2(-0.5f, 0.4f);
                 joint.connectedBody = torchRb;
 
                 isHoldingTorch = true;
@@ -135,6 +137,7 @@ public class PlayerNetwork : NetworkBehaviour
 
         Destroy(joint);
         torchRb.mass = 1;
+        torch.transform.Rotate(new Vector3(0, 0, 10));
 
         SetTorchBeingHeldBoolServerRpc(false);
         isHoldingTorch = false;

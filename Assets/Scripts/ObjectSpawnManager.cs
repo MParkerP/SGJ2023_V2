@@ -26,7 +26,7 @@ public class ObjectSpawnManager : NetworkBehaviour
     {
         if (this.IsOwner)
         {
-            GameObject theTorch = Instantiate(torch, new Vector3(0, 2, 0), Quaternion.identity);
+            GameObject theTorch = Instantiate(torch, new Vector3(0, 2, 0), Quaternion.Euler(new Vector3(0,0,10)));
             theTorch.GetComponent<NetworkObject>().Spawn();
         }
     }
