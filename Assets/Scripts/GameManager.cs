@@ -13,15 +13,11 @@ public class GameManager : NetworkBehaviour
 
     private void Awake()
     {
-        if (NetworkManager is not null)
-        {
-            //when the game manager wakes, add the event onGameSceneLoaded to the callback for the network onloadeventcompleted delegate
-            NetworkManager.Singleton.SceneManager.OnLoadEventCompleted +=
-                        (string sceneName, LoadSceneMode loadSceneMode, List<ulong> clientsCompleted, List<ulong> clientsTimedOut) => { onGameSceneLoaded?.Invoke(); };
+        //when the game manager wakes, add the event onGameSceneLoaded to the callback for the network onloadeventcompleted delegate
+        NetworkManager.Singleton.SceneManager.OnLoadEventCompleted +=
+                    (string sceneName, LoadSceneMode loadSceneMode, List<ulong> clientsCompleted, List<ulong> clientsTimedOut) => { onGameSceneLoaded?.Invoke(); };
 
-            NetworkManager.Singleton.OnClientConnectedCallback += (ulong number) => { onConnectedToHost?.Invoke(); };
-        }
-
+        NetworkManager.Singleton.OnClientConnectedCallback += (ulong number) => { onConnectedToHost?.Invoke(); };
     }
 
 }

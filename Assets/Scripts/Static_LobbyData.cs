@@ -13,4 +13,5 @@ public static class Static_LobbyData
     }
 
     public static LobbyStatus currentLobbyStatus;
+
 }

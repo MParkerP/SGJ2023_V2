@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Torch
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Darkness
+    uniqueID: 1281286035
+    locked: 0
+  - name: Player
+    uniqueID: 2331348637
+    locked: 0
+  - name: Torch
+    uniqueID: 3853431575
     locked: 0
