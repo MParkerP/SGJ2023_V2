@@ -1,0 +1,2375 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BirdLight
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ComponentVersion
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LightType
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_BlendStyleIndex
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_FalloffIntensity
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Color.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Color.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Color.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Intensity
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LightVolumeIntensity
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LightVolumeIntensityEnabled
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ApplyToSortingLayers.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ApplyToSortingLayers.Array.data[0]
+    value: -1963618659
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LightCookieSprite
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_DeprecatedPointLightCookieSprite
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LightOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_AlphaBlendOnOverlap
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_OverlapOperation
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_NormalMapDistance
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_NormalMapQuality
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_UseNormalMap
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShadowIntensityEnabled
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShadowIntensity
+    value: 0.75
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShadowVolumeIntensityEnabled
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShadowVolumeIntensity
+    value: 0.75
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.size
+    value: 42
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[0].position.x
+    value: -0.07832154
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[0].position.y
+    value: -0.009539604
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[0].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[0].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[0].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[0].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[0].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[0].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[0].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[1].position.x
+    value: -0.02049213
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[1].position.y
+    value: -0.010707605
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[1].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[1].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[1].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[1].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[1].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[1].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[1].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[2].position.x
+    value: -0.019414881
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[2].position.y
+    value: -0.039255194
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[2].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[2].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[2].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[2].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[2].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[2].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[2].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[3].position.x
+    value: 0.010209958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[3].position.y
+    value: -0.03979382
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[3].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[3].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[3].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[3].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[3].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[3].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[3].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[4].position.x
+    value: 0.009671283
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[4].position.y
+    value: -0.010168929
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[4].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[4].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[4].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[4].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[4].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[4].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[4].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[5].position.x
+    value: 0.09022293
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[5].position.y
+    value: -0.009539604
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[5].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[5].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[5].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[5].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[5].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[5].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[5].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[6].position.x
+    value: 0.090222836
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[6].position.y
+    value: 0.15984601
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[6].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[6].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[6].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[6].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[6].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[6].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[6].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[7].position.x
+    value: -0.078321524
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[7].position.y
+    value: 0.15984598
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[7].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[7].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[7].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[7].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[7].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[7].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[7].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[8].position.x
+    value: -0.07920334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[8].position.y
+    value: 0.080321535
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[8].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[8].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[8].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[8].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[8].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[8].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[8].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[9].position.x
+    value: -0.09913272
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[9].position.y
+    value: 0.080321535
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[9].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[9].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[9].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[9].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[9].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[9].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[9].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[10].position.x
+    value: -0.09967119
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[10].position.y
+    value: 0.07116476
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[10].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[10].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[10].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[10].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[10].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[10].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[10].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[11].position.x
+    value: -0.10882817
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[11].position.y
+    value: 0.07170338
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[11].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[11].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[11].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[11].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[11].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[11].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[11].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[12].position.x
+    value: -0.109366745
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[12].position.y
+    value: 0.04046267
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[12].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[12].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[12].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[12].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[12].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[12].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[12].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[13].position.x
+    value: -0.07920323
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[13].position.y
+    value: 0.039385345
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[13].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[13].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[13].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[13].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[13].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[13].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[13].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[14].position.x
+    value: -0.07832154
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[14].position.y
+    value: -0.009539604
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[14].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[14].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[14].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[14].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[14].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[14].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[14].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[15].position.x
+    value: -0.02049213
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[15].position.y
+    value: -0.010707605
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[15].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[15].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[15].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[15].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[15].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[15].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[15].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[16].position.x
+    value: -0.019414881
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[16].position.y
+    value: -0.039255194
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[16].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[16].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[16].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[16].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[16].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[16].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[16].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[17].position.x
+    value: 0.010209958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[17].position.y
+    value: -0.03979382
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[17].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[17].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[17].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[17].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[17].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[17].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[17].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[18].position.x
+    value: 0.009671283
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[18].position.y
+    value: -0.010168929
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[18].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[18].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[18].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[18].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[18].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[18].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[18].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[19].position.x
+    value: 0.09022293
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[19].position.y
+    value: -0.009539604
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[19].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[19].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[19].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[19].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[19].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[19].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[19].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[20].position.x
+    value: 0.090222836
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[20].position.y
+    value: 0.15984601
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[20].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[20].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[20].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[20].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[20].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[20].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[20].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[21].position.x
+    value: -0.078321524
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[21].position.y
+    value: 0.15984598
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[21].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[21].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[21].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[21].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[21].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[21].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[21].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[22].position.x
+    value: -0.07920334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[22].position.y
+    value: 0.080321535
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[22].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[22].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[22].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[22].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[22].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[22].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[22].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[23].position.x
+    value: -0.09913272
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[23].position.y
+    value: 0.080321535
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[23].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[23].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[23].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[23].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[23].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[23].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[23].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[24].position.x
+    value: -0.09967119
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[24].position.y
+    value: 0.07116476
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[24].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[24].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[24].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[24].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[24].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[24].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[24].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[25].position.x
+    value: -0.10882817
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[25].position.y
+    value: 0.07170338
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[25].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[25].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[25].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[25].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[25].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[25].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[25].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[26].position.x
+    value: -0.109366745
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[26].position.y
+    value: 0.04046267
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[26].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[26].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[26].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[26].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[26].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[26].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[26].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[27].position.x
+    value: -0.07920323
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[27].position.y
+    value: 0.039385345
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[27].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[27].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[27].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[27].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[27].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[27].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[27].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[28].position.x
+    value: -0.0728
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[28].position.y
+    value: -0.0139
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[28].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[28].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[28].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[28].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[28].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[28].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[28].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[29].position.x
+    value: -0.0272
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[29].position.y
+    value: -0.0114
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[29].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[29].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[29].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[29].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[29].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[29].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[29].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[30].position.x
+    value: -0.0287
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[30].position.y
+    value: -0.031
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[30].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[30].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[30].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[30].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[30].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[30].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[30].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[31].position.x
+    value: 0.0107
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[31].position.y
+    value: -0.0319
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[31].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[31].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[31].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[31].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[31].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[31].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[31].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[32].position.x
+    value: 0.0027
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[32].position.y
+    value: -0.0162
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[32].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[32].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[32].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[32].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[32].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[32].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[32].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[33].position.x
+    value: 0.0871
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[33].position.y
+    value: -0.0058
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[33].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[33].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[33].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[33].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[33].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[33].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[33].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[34].position.x
+    value: 0.0848
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[34].position.y
+    value: 0.1661
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[34].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[34].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[34].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[34].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[34].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[34].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[34].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[35].position.x
+    value: -0.0824
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[35].position.y
+    value: 0.1611
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[35].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[35].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[35].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[35].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[35].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[35].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[35].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[36].position.x
+    value: -0.0825
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[36].position.y
+    value: 0.0728
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[36].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[36].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[36].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[36].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[36].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[36].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[36].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[37].position.x
+    value: -0.1072
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[37].position.y
+    value: 0.0764
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[37].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[37].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[37].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[37].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[37].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[37].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[37].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[38].position.x
+    value: -0.1019
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[38].position.y
+    value: 0.0752
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[38].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[38].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[38].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[38].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[38].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[38].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[38].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[39].position.x
+    value: -0.1011
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[39].position.y
+    value: 0.07
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[39].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[39].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[39].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[39].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[39].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[39].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[39].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[40].position.x
+    value: -0.1096
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[40].position.y
+    value: 0.0483
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[40].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[40].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[40].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[40].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[40].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[40].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[40].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[41].position.x
+    value: -0.0835
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[41].position.y
+    value: 0.0443
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[41].position.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[41].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[41].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[41].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[41].color.a
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[41].uv.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Vertices.Array.data[41].uv.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.size
+    value: 123
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[0]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[1]
+    value: 13
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[2]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[3]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[4]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[5]
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[6]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[7]
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[8]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[9]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[10]
+    value: 13
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[11]
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[12]
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[13]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[14]
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[15]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[16]
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[17]
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[18]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[19]
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[20]
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[21]
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[22]
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[23]
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[24]
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[25]
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[26]
+    value: 9
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[27]
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[28]
+    value: 13
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[29]
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[30]
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[31]
+    value: 12
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[32]
+    value: 11
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[33]
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[34]
+    value: 13
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[35]
+    value: 12
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[36]
+    value: 14
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[37]
+    value: 28
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[38]
+    value: 28
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[39]
+    value: 14
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[40]
+    value: 15
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[41]
+    value: 29
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[42]
+    value: 14
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[43]
+    value: 28
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[44]
+    value: 29
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[45]
+    value: 15
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[46]
+    value: 16
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[47]
+    value: 30
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[48]
+    value: 15
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[49]
+    value: 29
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[50]
+    value: 30
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[51]
+    value: 16
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[52]
+    value: 17
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[53]
+    value: 31
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[54]
+    value: 16
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[55]
+    value: 30
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[56]
+    value: 31
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[57]
+    value: 17
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[58]
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[59]
+    value: 32
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[60]
+    value: 17
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[61]
+    value: 31
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[62]
+    value: 32
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[63]
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[64]
+    value: 19
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[65]
+    value: 33
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[66]
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[67]
+    value: 32
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[68]
+    value: 33
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[69]
+    value: 19
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[70]
+    value: 20
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[71]
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[72]
+    value: 19
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[73]
+    value: 33
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[74]
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[75]
+    value: 20
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[76]
+    value: 21
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[77]
+    value: 35
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[78]
+    value: 20
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[79]
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[80]
+    value: 35
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[81]
+    value: 21
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[82]
+    value: 22
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[83]
+    value: 36
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[84]
+    value: 21
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[85]
+    value: 35
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[86]
+    value: 36
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[87]
+    value: 22
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[88]
+    value: 23
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[89]
+    value: 37
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[90]
+    value: 22
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[91]
+    value: 36
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[92]
+    value: 37
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[93]
+    value: 23
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[94]
+    value: 24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[95]
+    value: 38
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[96]
+    value: 23
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[97]
+    value: 37
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[98]
+    value: 38
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[99]
+    value: 24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[100]
+    value: 25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[101]
+    value: 39
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[102]
+    value: 24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[103]
+    value: 38
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[104]
+    value: 39
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[105]
+    value: 25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[106]
+    value: 26
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[107]
+    value: 40
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[108]
+    value: 25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[109]
+    value: 39
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[110]
+    value: 40
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[111]
+    value: 26
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[112]
+    value: 27
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[113]
+    value: 41
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[114]
+    value: 26
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[115]
+    value: 40
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[116]
+    value: 41
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[117]
+    value: 28
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[118]
+    value: 14
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[119]
+    value: 27
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[120]
+    value: 28
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[121]
+    value: 41
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Triangles.Array.data[122]
+    value: 27
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LocalBounds.m_Center.x
+    value: -0.009688534
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LocalBounds.m_Center.y
+    value: 0.06315309
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LocalBounds.m_Center.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LocalBounds.m_Extent.x
+    value: 0.099911466
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LocalBounds.m_Extent.y
+    value: 0.10294691
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_LocalBounds.m_Extent.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PointLightInnerAngle
+    value: 360
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PointLightOuterAngle
+    value: 360
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PointLightInnerRadius
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PointLightOuterRadius
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapeLightParametricSides
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapeLightParametricAngleOffset
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapeLightParametricRadius
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapeLightFalloffSize
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapeLightFalloffOffset.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapeLightFalloffOffset.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.size
+    value: 14
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[0].x
+    value: -0.07832154
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[0].y
+    value: -0.009539604
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[0].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[1].x
+    value: -0.02049213
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[1].y
+    value: -0.010707605
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[1].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[2].x
+    value: -0.019414881
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[2].y
+    value: -0.039255194
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[2].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[3].x
+    value: 0.010209958
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[3].y
+    value: -0.03979382
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[3].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[4].x
+    value: 0.009671283
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[4].y
+    value: -0.010168929
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[4].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[5].x
+    value: 0.09022293
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[5].y
+    value: -0.009539604
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[5].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[6].x
+    value: 0.090222836
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[6].y
+    value: 0.15984601
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[6].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[7].x
+    value: -0.078321524
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[7].y
+    value: 0.15984598
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[7].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[8].x
+    value: -0.07920334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[8].y
+    value: 0.080321535
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[8].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[9].x
+    value: -0.09913272
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[9].y
+    value: 0.080321535
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[9].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[10].x
+    value: -0.09967119
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[10].y
+    value: 0.07116476
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[10].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[11].x
+    value: -0.10882817
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[11].y
+    value: 0.07170338
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[11].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[12].x
+    value: -0.109366745
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[12].y
+    value: 0.04046267
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[12].z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[13].x
+    value: -0.07920323
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[13].y
+    value: 0.039385345
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ShapePath.Array.data[13].z
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
