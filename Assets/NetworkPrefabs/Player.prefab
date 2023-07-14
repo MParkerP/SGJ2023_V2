@@ -355,8 +355,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1963618659
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1022707325, guid: 3dde55ebaf18a7a47b371646adfd337a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -487,52 +487,52 @@ MonoBehaviour:
   - position: {x: -0.07920323, y: 0.039385345, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.0728, y: -0.0139, z: 0}
+  - position: {x: -0.0837, y: -0.0188, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.0272, y: -0.0114, z: 0}
+  - position: {x: -0.0246, y: -0.0152, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.0287, y: -0.031, z: 0}
+  - position: {x: -0.0273, y: -0.0358, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.0107, y: -0.0319, z: 0}
+  - position: {x: 0.0032, y: -0.0309, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.0027, y: -0.0162, z: 0}
+  - position: {x: 0.0076, y: -0.0152, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.0871, y: -0.0058, z: 0}
+  - position: {x: 0.0965, y: -0.0128, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.0848, y: 0.1661, z: 0}
+  - position: {x: 0.0959, y: 0.1539, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.0824, y: 0.1611, z: 0}
+  - position: {x: -0.0776, y: 0.1564, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.0825, y: 0.0728, z: 0}
+  - position: {x: -0.0698, y: 0.0803, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1072, y: 0.0764, z: 0}
+  - position: {x: -0.101, y: 0.0713, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1019, y: 0.0752, z: 0}
+  - position: {x: -0.1019, y: 0.0684, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1011, y: 0.07, z: 0}
+  - position: {x: -0.1097, y: 0.0713, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1096, y: 0.0483, z: 0}
+  - position: {x: -0.1161, y: 0.0431, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.0835, y: 0.0443, z: 0}
+  - position: {x: -0.0707, y: 0.0384, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 00000d00010001000400020001000800040001000d00080002000400030004000600050004000800060006000800070008000a00090008000d000a000a000c000b000a000d000c000e001c001c000e000f001d000e001c001d000f0010001e000f001d001e00100011001f0010001e001f0011001200200011001f00200012001300210012002000210013001400220013002100220014001500230014002200230015001600240015002300240016001700250016002400250017001800260017002500260018001900270018002600270019001a0028001900270028001a001b0029001a00280029001c000e001b001c0029001b00
   m_LocalBounds:
-    m_Center: {x: -0.009688534, y: 0.06315309, z: 0}
-    m_Extent: {x: 0.099911466, y: 0.10294691, z: 0}
+    m_Center: {x: -0.009799998, y: 0.060026094, z: 0}
+    m_Extent: {x: 0.1063, y: 0.09981991, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -647,22 +647,22 @@ MonoBehaviour:
   - position: {x: -0.5, y: 0.5, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.4933, y: -0.5049, z: 0}
+  - position: {x: -0.4937, y: -0.4921, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.5042, y: -0.5018, z: 0}
+  - position: {x: 0.5012, y: -0.5045, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.5064, y: 0.5093, z: 0}
+  - position: {x: 0.4943, y: 0.5049, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.5086, y: 0.4928, z: 0}
+  - position: {x: -0.4949, y: 0.5059, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000003000100010003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: -0.0011000037, y: 0.0022000074, z: 0}
-    m_Extent: {x: 0.5075, y: 0.5071, z: 0}
+    m_Center: {x: 0.00060001016, y: 0.00070002675, z: 0}
+    m_Extent: {x: 0.5006, y: 0.5052, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
