@@ -36,7 +36,6 @@ public class PlayerNetwork : NetworkBehaviour
     //network equivalent of Awake()
     public override void OnNetworkSpawn()
     {
-
         //subscribe the debug function to the onvaluechanged delegate using lambda method
         randomNumber.OnValueChanged += (int previousValue, int newValue) =>
         {
