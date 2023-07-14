@@ -30,6 +30,8 @@ public class PlayerNetwork : NetworkBehaviour
     private RelativeJoint2D playerObjectJoint;
     [SerializeField] private float throwForce;
 
+    private GameObject startingSpawnPosition;
+
     //network variables
     private NetworkVariable<int> randomNumber = new NetworkVariable<int>(1, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
 
@@ -45,6 +47,11 @@ public class PlayerNetwork : NetworkBehaviour
 
         //set player object name to the client id so that it can be located easily via RPC
         this.name = OwnerClientId.ToString();
+
+        //find starting spawn position and move there
+        startingSpawnPosition = GameObject.Find("SpawnPosition");
+        if (startingSpawnPosition != null ) { transform.position = startingSpawnPosition.transform.position; }
+        
     }
 
     private void Awake()

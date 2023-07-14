@@ -135,7 +135,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.009293385, y: 0.05933234}
+  m_Offset: {x: 0.005820509, y: 0.05933234}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -146,7 +146,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.20317142, y: 0.19933951}
+  m_Size: {x: 0.17294362, y: 0.19933951}
   m_EdgeRadius: 0
 --- !u!114 &187484280725690035
 MonoBehaviour:
@@ -376,22 +376,22 @@ MonoBehaviour:
   - position: {x: -0.114567846, y: 0.17097253, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1236, y: -0.0452, z: 0}
+  - position: {x: -0.1087, y: -0.0392, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1175, y: -0.044, z: 0}
+  - position: {x: 0.135, y: -0.046, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1331, y: 0.1757, z: 0}
+  - position: {x: 0.1294, y: 0.1662, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1184, y: 0.1715, z: 0}
+  - position: {x: -0.1147, y: 0.174, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000002000100000003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.004750002, y: 0.065249994, z: 0}
-    m_Extent: {x: 0.12835, y: 0.11045, z: 0}
+    m_Center: {x: 0.010150004, y: 0.063999996, z: 0}
+    m_Extent: {x: 0.124850005, y: 0.11, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
