@@ -6,11 +6,13 @@ using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 using System.Threading.Tasks;
+using UnityEditor.PackageManager;
 
 public class PlayerNetwork : NetworkBehaviour
 {
     //movement
     private Rigidbody2D playerRb;
+    [SerializeField] private SpriteRenderer playerSR;
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
 
@@ -19,7 +21,14 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private LayerMask torchLayer;
     [SerializeField] private bool isHoldingTorch = false;
 
+    private Vector3 leftTorchPoint = new Vector3(-0.7f, 0.6f);
+    private Vector3 rightTorchPoint = new Vector3(0.7f, 0.6f);
+    [SerializeField] private string directionFacing = "left";
+
     private GameObject torchNetwork;
+    private GameObject playerTorch;
+    private RelativeJoint2D playerObjectJoint;
+    [SerializeField] private float throwForce;
 
     //network variables
     private NetworkVariable<int> randomNumber = new NetworkVariable<int>(1, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
@@ -33,6 +42,9 @@ public class PlayerNetwork : NetworkBehaviour
         {
             Debug.Log(OwnerClientId + "; randomNumber: " + randomNumber.Value);
         };
+
+        //set player object name to the client id so that it can be located easily via RPC
+        this.name = OwnerClientId.ToString();
     }
 
     private void Awake()
@@ -49,6 +61,16 @@ public class PlayerNetwork : NetworkBehaviour
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         playerRb.velocity = new Vector3(horizontalInput * speed, playerRb.velocity.y, 0);
 
+        if (horizontalInput > 0)
+        {
+            TurnRight();
+        }
+
+        if (horizontalInput < 0)
+        {
+            TurnLeft();
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
@@ -57,6 +79,11 @@ public class PlayerNetwork : NetworkBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             InteractWithTorch();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            ThrowTorch();
         }
     }
 
@@ -88,6 +115,7 @@ public class PlayerNetwork : NetworkBehaviour
         {
             //get torch from array of colliders and access its RB
             GameObject torch = torchesHit[0].gameObject;
+            playerTorch = torch;
             Rigidbody2D torchRb = torch.GetComponent<Rigidbody2D>();
             torchNetwork = torch.transform.parent.gameObject;
 
@@ -97,6 +125,9 @@ public class PlayerNetwork : NetworkBehaviour
                 Debug.Log("shouldnt be able to grab torch");
                 return;
             }
+
+            //set torch object to being held
+            SetTorchBeingHeldBoolServerRpc(true);
 
             //request ownership of torch from the server
             //using AWAIT in order to prevent the joint from being made before ownership is transferred
@@ -110,19 +141,36 @@ public class PlayerNetwork : NetworkBehaviour
             if (torchRb != null)
             {
                 //ensure torch does not have to float to its position and is not exerting mass to player
-                torch.transform.position = this.transform.position + new Vector3(-0.5f, 0.4f);
+                if (directionFacing == "left")
+                {
+                    torch.transform.position = this.transform.position + leftTorchPoint;
+                }
+                else if (directionFacing == "right")
+                {
+                    torch.transform.position = this.transform.position + rightTorchPoint;
+                }
+                
                 torch.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 torchRb.mass = 0;
 
                 //create and set the joint before connecting to the torch
                 RelativeJoint2D joint = this.AddComponent<RelativeJoint2D>();
+                playerObjectJoint= joint;
                 joint.enableCollision = false;
                 joint.autoConfigureOffset = false;
-                joint.linearOffset = new Vector2(-0.5f, 0.4f);
+
+                if (directionFacing == "left")
+                {
+                    joint.linearOffset = leftTorchPoint;
+                }
+                else if (directionFacing == "right")
+                {
+                    joint.linearOffset = rightTorchPoint;
+                }
                 joint.connectedBody = torchRb;
 
+                //set that the player is holding the torch
                 isHoldingTorch = true;
-                SetTorchBeingHeldBoolServerRpc(true);
             }
         }
     }
@@ -130,17 +178,8 @@ public class PlayerNetwork : NetworkBehaviour
     //player drops torch object
     private void DropTorch()
     {
-        RelativeJoint2D joint = GetComponent<RelativeJoint2D>();
-        GameObject torch = joint.connectedBody.gameObject;
-        Rigidbody2D torchRb = torch.GetComponent<Rigidbody2D>();
-        GameObject torchNetwork = torch.transform.parent.gameObject;
-
-        Destroy(joint);
-        torchRb.mass = 1;
-        torch.transform.Rotate(new Vector3(0, 0, 10));
-
-        SetTorchBeingHeldBoolServerRpc(false);
-        isHoldingTorch = false;
+        ReleaseTorch(true);
+        playerTorch = null;
     }
 
 
@@ -151,7 +190,6 @@ public class PlayerNetwork : NetworkBehaviour
     {
         GameObject.Find("Torch(Clone)").GetComponent<Torch>().isBeingHeld.Value = status;
     }
-
 
     //request server to give player ownership of object by object name
     [ServerRpc(RequireOwnership = false)]
@@ -166,9 +204,103 @@ public class PlayerNetwork : NetworkBehaviour
         gameObject.GetComponent<NetworkObject>().ChangeOwnership(this.OwnerClientId);
     }
 
+    [ServerRpc(RequireOwnership = false)]
+    private void RotatePlayerSpriteServerRpc(bool isXFlipped, ServerRpcParams serverRpcParams = default)
+    {
+        var clientId = serverRpcParams.Receive.SenderClientId;
+        //ulong otherClientId;
+        if (NetworkManager.ConnectedClients.ContainsKey(clientId))
+        {
+
+            var client = NetworkManager.ConnectedClients[clientId];
+            client.PlayerObject.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = isXFlipped;
+            RotatePlayerSpriteClientRpc(this.name, isXFlipped);
+        }
+    }
+
+    [ClientRpc]
+    private void RotatePlayerSpriteClientRpc(string targetName, bool value)
+    {
+        var targetPlayerObject = GameObject.Find(targetName);
+        targetPlayerObject.GetComponent<SpriteRenderer>().flipX = value;
+    }
+
+    private void TurnLeft()
+    {
+        playerSR.flipX = false;
+        RotatePlayerSpriteServerRpc(false);
+        if (this.IsServer)
+        {
+
+        }
+        directionFacing = "left";
+
+        if (playerTorch != null)
+        {
+            playerTorch.transform.position = this.transform.position + leftTorchPoint;
+            playerObjectJoint.linearOffset = leftTorchPoint;
+            playerObjectJoint.linearOffset = leftTorchPoint;
+        }
+    }
+
+    private void TurnRight()
+    {
+        playerSR.flipX = true;
+        RotatePlayerSpriteServerRpc(true);
+        directionFacing = "right";
+
+        if (playerTorch != null)
+        {
+            playerTorch.transform.position = this.transform.position + rightTorchPoint;
+            playerObjectJoint.linearOffset = rightTorchPoint;
+            playerObjectJoint.linearOffset = rightTorchPoint;
+        }
+    }
+
+    private void ThrowTorch()
+    {
+        //ensure that player is holding the torch
+        if (playerTorch == null || !isHoldingTorch) { return; }
+
+        Vector3 throwDirection = new Vector3(0, 0, 0);
+
+        //get throw direction depending on which way player is facing
+        if (directionFacing == "left") { throwDirection = new Vector3(-1, 1).normalized; }
+        else if (directionFacing == "right") { throwDirection = new Vector3(1, 1).normalized; }
+
+        //release torch with rotating
+        ReleaseTorch(true);
+
+        //ensure that moving while throwing does not allow further throws
+        playerTorch.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+
+        //apply force to torch according to throw direction and throw force
+        playerTorch.GetComponent<Rigidbody2D>().AddForce(throwDirection * throwForce);
+
+        playerTorch = null;
 
 
+    }
 
+    //!!DOES NOT SET PLAYERTORCH TO NULL!!
+    private void ReleaseTorch(bool isRotatedOnDrop)
+    {
+        Rigidbody2D playerTorchRb = playerTorch.GetComponent<Rigidbody2D>();
+
+        Destroy(playerObjectJoint);
+        playerTorchRb.mass = 1;
+        playerTorchRb.velocity *= 0.5f;
+
+        //rotate the torch slightly so that it does not fall vertically
+        if (isRotatedOnDrop)
+        {
+            if (directionFacing == "left") { playerTorch.transform.Rotate(new Vector3(0, 0, 10)); }
+            else if (directionFacing == "right") { playerTorch.transform.Rotate(new Vector3(0, 0, -10)); }
+        }
+  
+        SetTorchBeingHeldBoolServerRpc(false);
+        isHoldingTorch = false;
+    }
 
     private void OnDrawGizmosSelected()
     {
