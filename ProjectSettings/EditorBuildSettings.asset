@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 877504a4d253aa14394e23ab6df4f92f
+  - enabled: 1
+    path: Assets/Scenes/ParkerScene.unity
+    guid: 92f0f1e42b0b48048b81345b7e174709
   m_configObjects: {}
