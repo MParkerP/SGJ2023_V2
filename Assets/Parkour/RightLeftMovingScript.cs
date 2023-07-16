@@ -5,14 +5,16 @@ using UnityEngine;
 public class RightLeftMovingScript : MonoBehaviour
 {
     Transform platformTr;
+    Rigidbody2D platformRb;
     float newXposition;
     float leftMost;
     float rightMost;
-    float speed = 1;
-    int direction = 1;
+    [SerializeField] float speed = 1;
+    [SerializeField] int direction = 1;
     // Start is called before the first frame update
     void Start()
     {
+        platformRb = GetComponent<Rigidbody2D>();
         platformTr = GetComponent<Transform>();
         leftMost = transform.GetChild(0).GetComponent<Transform>().position.x;
         rightMost = transform.GetChild(1).GetComponent<Transform>().position.x;
@@ -29,14 +31,16 @@ public class RightLeftMovingScript : MonoBehaviour
         switch (direction)
         {
             case 1:
-                newXposition = platformTr.position.x + (0.04f * speed);
+                // newXposition = platformTr.position.x + (0.04f * speed);
+                platformRb.velocity = new Vector2(2,0);
                 if (platformTr.position.x > rightMost) { direction = -1; }
                 break;
             case -1:
-                newXposition = platformTr.position.x - (0.04f * speed);
+                // newXposition = platformTr.position.x - (0.04f * speed);
+                platformRb.velocity = new Vector2(-2, 0);
                 if (platformTr.position.x < leftMost) { direction = 1; }
                 break;
         }
-        platformTr.position = new Vector3(newXposition, platformTr.position.y, platformTr.position.z);
+       // platformTr.position = new Vector3(newXposition, platformTr.position.y, platformTr.position.z);
     }
 }

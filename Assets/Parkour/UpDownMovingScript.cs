@@ -8,8 +8,8 @@ public class UpDownMovingScript : MonoBehaviour
     float newYposition;
     float minHeight;
     float maxHeight;
-    float speed = 1;
-    int direction = 1;
+    [SerializeField] float speed = 1;
+    [SerializeField] int direction = 1;
     // Start is called before the first frame update
     void Start()
     {
