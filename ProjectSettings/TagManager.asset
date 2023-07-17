@@ -50,6 +50,9 @@ TagManager:
   - name: Darkness
     uniqueID: 1281286035
     locked: 0
+  - name: GlowingEnvironment
+    uniqueID: 2244899889
+    locked: 0
   - name: Player
     uniqueID: 2331348637
     locked: 0

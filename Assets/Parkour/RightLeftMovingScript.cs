@@ -32,12 +32,12 @@ public class RightLeftMovingScript : MonoBehaviour
         {
             case 1:
                 // newXposition = platformTr.position.x + (0.04f * speed);
-                platformRb.velocity = new Vector2(2,0);
+                platformRb.velocity = new Vector2(2*speed,0);
                 if (platformTr.position.x > rightMost) { direction = -1; }
                 break;
             case -1:
                 // newXposition = platformTr.position.x - (0.04f * speed);
-                platformRb.velocity = new Vector2(-2, 0);
+                platformRb.velocity = new Vector2(-2*speed, 0);
                 if (platformTr.position.x < leftMost) { direction = 1; }
                 break;
         }

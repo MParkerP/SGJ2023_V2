@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using System.Threading.Tasks;
 using UnityEditor.PackageManager;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerNetwork : NetworkBehaviour
 {
@@ -30,7 +31,8 @@ public class PlayerNetwork : NetworkBehaviour
     private RelativeJoint2D playerObjectJoint;
     [SerializeField] private float throwForce;
 
-    private GameObject startingSpawnPosition;
+    private GameObject playerSpawnPosition;
+
 
     //network variables
     private NetworkVariable<int> randomNumber = new NetworkVariable<int>(1, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
@@ -49,9 +51,8 @@ public class PlayerNetwork : NetworkBehaviour
         this.name = OwnerClientId.ToString();
 
         //find starting spawn position and move there
-        startingSpawnPosition = GameObject.Find("SpawnPosition");
-        if (startingSpawnPosition != null ) { transform.position = startingSpawnPosition.transform.position; }
-        
+        playerSpawnPosition = GameObject.Find("PlayerSpawnPosition");
+        if (playerSpawnPosition != null ) { transform.position = playerSpawnPosition.transform.position; }
     }
 
     private void Awake()
@@ -135,6 +136,9 @@ public class PlayerNetwork : NetworkBehaviour
 
             //set torch object to being held
             SetTorchBeingHeldBoolServerRpc(true);
+
+            //activate any environment that needs to glow when holding torch
+            ActivateGlowingEnvironment();
 
             //request ownership of torch from the server
             //using AWAIT in order to prevent the joint from being made before ownership is transferred
@@ -298,6 +302,9 @@ public class PlayerNetwork : NetworkBehaviour
         playerTorchRb.mass = 1;
         playerTorchRb.velocity *= 0.5f;
 
+        //turn off any environment glows that are activated when holding the torch
+        DeactivateGlowingEnvironment();
+
         //rotate the torch slightly so that it does not fall vertically
         if (isRotatedOnDrop)
         {
@@ -307,6 +314,31 @@ public class PlayerNetwork : NetworkBehaviour
   
         SetTorchBeingHeldBoolServerRpc(false);
         isHoldingTorch = false;
+    }
+
+    //find object in scene with all children with lights that want to be on when holding the torch
+    private void ActivateGlowingEnvironment()
+    {
+        GameObject glowingEnvironmentContainer = GameObject.Find("GlowingEnvironment");
+
+        Light2D[] glowingEnvironments = glowingEnvironmentContainer.GetComponentsInChildren<Light2D>(true);
+
+        foreach (Light2D environment in glowingEnvironments)
+        {
+            environment.enabled = true;
+        }
+    }
+
+    private void DeactivateGlowingEnvironment()
+    {
+        GameObject glowingEnvironmentContainer = GameObject.Find("GlowingEnvironment");
+
+        Light2D[] glowingEnvironments = glowingEnvironmentContainer.GetComponentsInChildren<Light2D>(true);
+
+        foreach (Light2D environment in glowingEnvironments)
+        {
+            environment.enabled = false;
+        }
     }
 
     private void OnDrawGizmosSelected()
