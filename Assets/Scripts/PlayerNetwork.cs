@@ -155,10 +155,9 @@ public class PlayerNetwork : NetworkBehaviour
                 await Task.Delay(10);
             }
 
-
-
             if (torchRb != null)
             {
+
                 //deactivate torch collider to prevent bumping into other objects
                 CapsuleCollider2D torchCollider = playerTorch.GetComponent<CapsuleCollider2D>();
                 torchCollider.enabled = false;
@@ -337,11 +336,14 @@ public class PlayerNetwork : NetworkBehaviour
     {
         GameObject glowingEnvironmentContainer = GameObject.Find("GlowingEnvironment");
 
-        Light2D[] glowingEnvironments = glowingEnvironmentContainer.GetComponentsInChildren<Light2D>(true);
-
-        foreach (Light2D environment in glowingEnvironments)
+        if (glowingEnvironmentContainer != null)
         {
-            environment.enabled = true;
+            Light2D[] glowingEnvironments = glowingEnvironmentContainer.GetComponentsInChildren<Light2D>(true);
+
+            foreach (Light2D environment in glowingEnvironments)
+            {
+                environment.enabled = true;
+            }
         }
     }
 
@@ -349,11 +351,14 @@ public class PlayerNetwork : NetworkBehaviour
     {
         GameObject glowingEnvironmentContainer = GameObject.Find("GlowingEnvironment");
 
-        Light2D[] glowingEnvironments = glowingEnvironmentContainer.GetComponentsInChildren<Light2D>(true);
-
-        foreach (Light2D environment in glowingEnvironments)
+        if (glowingEnvironmentContainer != null)
         {
-            environment.enabled = false;
+            Light2D[] glowingEnvironments = glowingEnvironmentContainer.GetComponentsInChildren<Light2D>(true);
+
+            foreach (Light2D environment in glowingEnvironments)
+            {
+                environment.enabled = false;
+            }
         }
     }
 
