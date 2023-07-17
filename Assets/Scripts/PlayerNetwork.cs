@@ -8,6 +8,7 @@ using UnityEngine;
 using System.Threading.Tasks;
 using UnityEditor.PackageManager;
 using UnityEngine.Rendering.Universal;
+using JetBrains.Annotations;
 
 public class PlayerNetwork : NetworkBehaviour
 {
@@ -16,6 +17,8 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private SpriteRenderer playerSR;
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
+
+    private bool isMoving;
 
     [SerializeField] private Transform grabPoint;
     [SerializeField] private float grabRadius;
@@ -67,7 +70,10 @@ public class PlayerNetwork : NetworkBehaviour
 
         //simple horizontal movement
         float horizontalInput = Input.GetAxisRaw("Horizontal");
-        playerRb.velocity = new Vector3(horizontalInput * speed, playerRb.velocity.y, 0);
+
+        if (horizontalInput != 0) { isMoving = true; }
+        if (isMoving) { playerRb.velocity = new Vector2(horizontalInput * speed, playerRb.velocity.y); }
+        if (horizontalInput== 0) { isMoving = false; }
 
         if (horizontalInput > 0)
         {
@@ -149,8 +155,14 @@ public class PlayerNetwork : NetworkBehaviour
                 await Task.Delay(10);
             }
 
+
+
             if (torchRb != null)
             {
+                //deactivate torch collider to prevent bumping into other objects
+                CapsuleCollider2D torchCollider = playerTorch.GetComponent<CapsuleCollider2D>();
+                torchCollider.enabled = false;
+
                 //ensure torch does not have to float to its position and is not exerting mass to player
                 if (directionFacing == "left")
                 {
@@ -297,6 +309,10 @@ public class PlayerNetwork : NetworkBehaviour
     private void ReleaseTorch(bool isRotatedOnDrop)
     {
         Rigidbody2D playerTorchRb = playerTorch.GetComponent<Rigidbody2D>();
+
+        //reactivate torch collider so it can hit other objects
+        CapsuleCollider2D torchCollider = playerTorch.GetComponent<CapsuleCollider2D>();
+        torchCollider.enabled = true;
 
         Destroy(playerObjectJoint);
         playerTorchRb.mass = 1;
