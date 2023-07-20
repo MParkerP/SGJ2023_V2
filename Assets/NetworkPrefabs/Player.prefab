@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSR: {fileID: 3854209889561902993}
   speed: 10
-  jumpForce: 700
+  jumpForce: 750
   grabPoint: {fileID: 8026316682675487311}
   grabRadius: 0.97
   torchLayer:
@@ -376,22 +376,22 @@ MonoBehaviour:
   - position: {x: -0.114567846, y: 0.17097253, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1236, y: -0.0432, z: 0}
+  - position: {x: -0.124, y: -0.0378, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1349, y: -0.0375, z: 0}
+  - position: {x: 0.1254, y: -0.0333, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1191, y: 0.1655, z: 0}
+  - position: {x: 0.1325, y: 0.1702, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1083, y: 0.171, z: 0}
+  - position: {x: -0.1224, y: 0.1666, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000002000100000003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.0056500025, y: 0.06454235, z: 0}
-    m_Extent: {x: 0.12925, y: 0.107742354, z: 0}
+    m_Center: {x: 0.0042499974, y: 0.06674564, z: 0}
+    m_Extent: {x: 0.12825, y: 0.10553907, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
