@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class MovingPlatformHor : NetworkBehaviour
+public class ShiftingPillar : NetworkBehaviour
 {
     [SerializeField] private GameObject leftEndpoint;
     private Vector3 leftMaxPosition;
@@ -21,18 +22,19 @@ public class MovingPlatformHor : NetworkBehaviour
 
     private void Start()
     {
-        platformRb= GetComponent<Rigidbody2D>();
+        platformRb = GetComponent<Rigidbody2D>();
+
 
         leftMaxPosition = leftEndpoint.transform.position;
         rightMaxPosition = rightEndpoint.transform.position;
 
-        if (startRight) 
-        { 
+        if (startRight)
+        {
             platformRb.velocity = new Vector3(1, 0, 0).normalized * moveSpeed;
             currentVelocity = platformRb.velocity;
         }
-        else if (startLeft) 
-        { 
+        else if (startLeft)
+        {
             platformRb.velocity = new Vector3(-1, 0, 0).normalized * moveSpeed;
             currentVelocity = platformRb.velocity;
         }
@@ -42,13 +44,13 @@ public class MovingPlatformHor : NetworkBehaviour
     {
         if (transform.position.x >= rightMaxPosition.x)
         {
-            transform.position = new Vector3(rightMaxPosition.x-0.01f, transform.position.y);
+            transform.position = new Vector3(rightMaxPosition.x - 0.01f, transform.position.y);
             platformRb.velocity *= new Vector3(-1, 0, 0);
             currentVelocity = platformRb.velocity;
         }
         else if (transform.position.x <= leftMaxPosition.x)
         {
-            transform.position = new Vector3(leftMaxPosition.x+0.01f, transform.position.y);
+            transform.position = new Vector3(leftMaxPosition.x + 0.01f, transform.position.y);
             platformRb.velocity *= new Vector3(-1, 0, 0);
             currentVelocity = platformRb.velocity;
         }
@@ -63,4 +65,5 @@ public class MovingPlatformHor : NetworkBehaviour
     {
         Gizmos.DrawLine(new Vector3(leftEndpoint.transform.position.x, transform.position.y), new Vector3(rightEndpoint.transform.position.x, transform.position.y));
     }
+
 }

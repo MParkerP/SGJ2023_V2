@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 8271938092363029887}
   m_Layer: 7
   m_Name: TorchSprite
-  m_TagString: Untagged
+  m_TagString: Torch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 6438228075805602539}
   m_Layer: 7
   m_Name: Torch
-  m_TagString: Untagged
+  m_TagString: Torch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
