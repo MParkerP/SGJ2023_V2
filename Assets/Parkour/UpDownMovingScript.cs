@@ -10,6 +10,8 @@ public class UpDownMovingScript : MonoBehaviour
     float maxHeight;
     [SerializeField] float speed = 1;
     [SerializeField] int direction = 1;
+    private bool isMoving = false;
+    public GameObject secondPlayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,22 +23,33 @@ public class UpDownMovingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!isMoving)
+        {
+          secondPlayer = GameObject.Find("1");
+        }
+        if (secondPlayer != null) 
+        { 
+            isMoving = true;
+        }
     }
 
     private void FixedUpdate()
     {
-        switch (direction)
+        
+        if (isMoving)
         {
-            case 1:
-                newYposition = platformTr.position.y + (0.04f * speed);
-                if (platformTr.position.y > maxHeight) { direction = -1; }
-                break;
-            case -1:
-                newYposition = platformTr.position.y - (0.04f * speed);
-                if (platformTr.position.y < minHeight) { direction = 1; }
-                break;
-        }
+            switch (direction)
+            {
+                case 1:
+                    newYposition = platformTr.position.y + (0.04f * speed);
+                    if (platformTr.position.y > maxHeight) { direction = -1; }
+                    break;
+                case -1:
+                    newYposition = platformTr.position.y - (0.04f * speed);
+                    if (platformTr.position.y < minHeight) { direction = 1; }
+                    break;
+            }
             platformTr.position = new Vector3(platformTr.position.x, newYposition, platformTr.position.z);
+        }
     }
 }
