@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FallingPlatScript : MonoBehaviour
@@ -16,6 +17,8 @@ public class FallingPlatScript : MonoBehaviour
     {
         platformTr = GetComponent<Transform>(); 
         platformRb = GetComponent<Rigidbody2D>();
+        
+
         startPosition = transform.position;
         platTime = timeBeforeFall;
     }
@@ -26,15 +29,23 @@ public class FallingPlatScript : MonoBehaviour
 
     private void FixedUpdate()
     {
+       
         if (fall) { platTime--; }
        
     }
     // Update is called once per frame
     void Update()
     {
+       
+
         if (platTime <= 0 && platformRb.bodyType != RigidbodyType2D.Dynamic)
         {
             platformRb.bodyType = RigidbodyType2D.Dynamic;
+            var platformCo = GetComponents<Collider2D>();
+            foreach (Collider2D collider in platformCo)
+            {
+                collider.enabled = false;
+            }
         }
         else if (platTime < respawnTime*-1)
         {
@@ -42,6 +53,11 @@ public class FallingPlatScript : MonoBehaviour
             platformTr.position = startPosition;
             platTime = timeBeforeFall;
             fall = false;
+            var platformCo = GetComponents<Collider2D>();
+            foreach (Collider2D collider in platformCo)
+            {
+                collider.enabled = true;
+            }
         }
     }
 }
