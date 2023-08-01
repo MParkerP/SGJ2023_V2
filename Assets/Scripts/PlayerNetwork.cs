@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using UnityEditor.PackageManager;
 using UnityEngine.Rendering.Universal;
 using JetBrains.Annotations;
+using UnityEngine.SceneManagement;
 
 public class PlayerNetwork : NetworkBehaviour
 {
@@ -35,6 +36,7 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private float throwForce;
 
     private GameObject playerSpawnPosition;
+    private bool isLookingForSpawn = true;
 
 
     //network variables
@@ -52,10 +54,6 @@ public class PlayerNetwork : NetworkBehaviour
 
         //set player object name to the client id so that it can be located easily via RPC
         this.name = OwnerClientId.ToString();
-
-        //find starting spawn position and move there
-        playerSpawnPosition = GameObject.Find("PlayerSpawnPosition");
-        if (playerSpawnPosition != null ) { transform.position = playerSpawnPosition.transform.position; }
     }
 
     private void Awake()
@@ -67,6 +65,18 @@ public class PlayerNetwork : NetworkBehaviour
     {
         //exits the update immeditately if not the owner of the object (other players)
         if (!IsOwner) return;
+
+        //look for player spawn until finds it
+        if (isLookingForSpawn)
+        {
+            playerSpawnPosition = GameObject.Find("PlayerSpawnPosition");
+        }
+        
+        if (playerSpawnPosition != null && isLookingForSpawn) 
+        { 
+            transform.position = playerSpawnPosition.transform.position;
+            isLookingForSpawn = false;
+        }
 
         //simple horizontal movement
         float horizontalInput = Input.GetAxisRaw("Horizontal");
