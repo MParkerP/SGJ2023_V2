@@ -23,14 +23,12 @@ public class UpDownMovingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isMoving)
-        {
-          secondPlayer = GameObject.Find("1");
-        }
-        if (secondPlayer != null) 
-        { 
-            isMoving = true;
-        }
+
+    }
+
+    public void StartMovingPlat()
+    {
+        isMoving = true;
     }
 
     private void FixedUpdate()
