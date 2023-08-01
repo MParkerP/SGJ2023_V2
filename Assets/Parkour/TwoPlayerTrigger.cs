@@ -11,6 +11,11 @@ public class TwoPlayerTrigger : MonoBehaviour
 
     private void Update()
     {
+
+    }
+
+    private void FixedUpdate()
+    {
         if (playerCount >= 2)
         {
             twoPlayerDetection?.Invoke();
