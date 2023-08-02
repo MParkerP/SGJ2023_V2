@@ -142,8 +142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ghostRadius: {fileID: 7106588701152306233}
   torch: {fileID: 0}
-  chaseSpeed: 2.5
-  retreatSpeed: 5
+  chaseSpeed: 3.5
+  retreatSpeed: 7
   isChasing: 1
   leftRetreat: {fileID: 0}
   rightRetreat: {fileID: 0}

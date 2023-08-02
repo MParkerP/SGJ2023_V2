@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Torch
   - Laser
+  - PlayerBody
   layers:
   - Default
   - TransparentFX

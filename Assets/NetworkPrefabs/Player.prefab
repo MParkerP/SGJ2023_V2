@@ -47,9 +47,10 @@ GameObject:
   - component: {fileID: 1196483213351957962}
   - component: {fileID: 4514187587583738667}
   - component: {fileID: 8986552372467320217}
+  - component: {fileID: 437490560934044561}
   m_Layer: 6
   m_Name: Square
-  m_TagString: Player
+  m_TagString: PlayerBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,9 +63,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3854209889561902996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3326, y: -0.7927, z: 0}
-  m_LocalScale: {x: 5.6005917, y: 5.6005917, z: 1.6382028}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7.1125836, y: 6.7668, z: 1.979325}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8026316682675487311}
   - {fileID: 1629945830488323739}
@@ -136,7 +137,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.005820509, y: 0.05933234}
+  m_Offset: {x: 0.005820513, y: 0.064895965}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -147,7 +148,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17294362, y: 0.19933951}
+  m_Size: {x: 0.17294362, y: 0.18821226}
   m_EdgeRadius: 0
 --- !u!114 &187484280725690035
 MonoBehaviour:
@@ -256,6 +257,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &437490560934044561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854209889561902996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8deae8091111f4eb30a56c1f4e0d3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransitionStateInfoList:
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 1740549055
+    DestinationState: -383254623
+    TransitionDuration: 0
+    TriggerNameHash: 1080829965
+    TransitionIndex: 0
+  m_Animator: {fileID: 8986552372467320217}
 --- !u!1 &3854209889814390703
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,22 +420,22 @@ MonoBehaviour:
   - position: {x: -0.114567846, y: 0.17097253, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1237, y: -0.043, z: 0}
+  - position: {x: -0.1141, y: -0.0296, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1294, y: -0.0468, z: 0}
+  - position: {x: 0.1201, y: -0.0342, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1193, y: 0.1818, z: 0}
+  - position: {x: 0.1353, y: 0.1764, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.122, y: 0.1625, z: 0}
+  - position: {x: -0.1078, y: 0.1708, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000002000100000003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.0028499998, y: 0.067499995, z: 0}
-    m_Extent: {x: 0.12655, y: 0.1143, z: 0}
+    m_Center: {x: 0.010366075, y: 0.06880329, z: 0}
+    m_Extent: {x: 0.12493392, y: 0.10759672, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

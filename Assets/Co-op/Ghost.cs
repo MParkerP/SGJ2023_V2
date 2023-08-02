@@ -39,7 +39,7 @@ public class Ghost : NetworkBehaviour
             }
             else
             {
-                if (isSearchingForRetreat) { Retreat(FindNearesetRetreat()); }
+                if (isSearchingForRetreat) { Retreat(); }
             }
         }
 
@@ -65,10 +65,18 @@ public class Ghost : NetworkBehaviour
         ghostRb.velocity = new Vector2(torch.transform.position.x - transform.position.x, torch.transform.position.y - transform.position.y).normalized * chaseSpeed;
     }
 
-    private void Retreat(GameObject retreatDirection)
+    private void Retreat()
     {
-        ghostRb.velocity = new Vector3(retreatDirection.transform.position.x, retreatDirection.transform.position.y).normalized * retreatSpeed;
-        isSearchingForRetreat = false;
+        GameObject nearestRetreat = FindNearesetRetreat();
+        float laserXPos = GameObject.Find("laser").transform.position.x;
+        if (nearestRetreat.transform.position.x > laserXPos)
+        {
+            ghostRb.velocity = new Vector2(1,1).normalized * retreatSpeed;
+        }
+        else
+        {
+            ghostRb.velocity = new Vector2(-1,-1).normalized * retreatSpeed;
+        }
     }
 
     private GameObject FindNearesetRetreat()
