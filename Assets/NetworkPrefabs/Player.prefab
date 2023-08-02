@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7642439845264848163}
   - component: {fileID: 1196483213351957962}
   - component: {fileID: 4514187587583738667}
+  - component: {fileID: 8986552372467320217}
   m_Layer: 6
   m_Name: Square
   m_TagString: Player
@@ -234,6 +235,27 @@ MonoBehaviour:
   isHoldingTorch: 0
   directionFacing: left
   throwForce: 750
+--- !u!95 &8986552372467320217
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854209889561902996}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f4f828b8b039d5489f54f58886d179a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3854209889814390703
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,22 +398,22 @@ MonoBehaviour:
   - position: {x: -0.114567846, y: 0.17097253, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1153, y: -0.0419, z: 0}
+  - position: {x: -0.1237, y: -0.043, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1179, y: -0.0393, z: 0}
+  - position: {x: 0.1294, y: -0.0468, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1181, y: 0.168, z: 0}
+  - position: {x: 0.1193, y: 0.1818, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.114, y: 0.1706, z: 0}
+  - position: {x: -0.122, y: 0.1625, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  m_Triangles: 000002000100000003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000b00
+  m_Triangles: 000002000100000003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.005793631, y: 0.06519236, z: 0}
-    m_Extent: {x: 0.12109363, y: 0.10709235, z: 0}
+    m_Center: {x: 0.0028499998, y: 0.067499995, z: 0}
+    m_Extent: {x: 0.12655, y: 0.1143, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

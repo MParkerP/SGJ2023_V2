@@ -14,6 +14,7 @@ using UnityEngine.SceneManagement;
 public class PlayerNetwork : NetworkBehaviour
 {
     //movement
+    private Animator playerAn;
     private Rigidbody2D playerRb;
     [SerializeField] private SpriteRenderer playerSR;
     [SerializeField] private float speed;
@@ -59,6 +60,7 @@ public class PlayerNetwork : NetworkBehaviour
     private void Awake()
     {
         playerRb = GetComponent<Rigidbody2D>();
+        playerAn = GetComponent<Animator>();
     }
 
     private void Update()
@@ -109,8 +111,17 @@ public class PlayerNetwork : NetworkBehaviour
         {
             ThrowTorch();
         }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Attack();
+        }
     }
 
+    private void Attack()
+    {
+        playerAn.SetTrigger("Attack");
+    }
     private void Jump()
     {
         playerRb.AddForce(Vector3.up * jumpForce);
