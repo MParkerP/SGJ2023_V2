@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using Unity.Netcode;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Ghost : NetworkBehaviour
@@ -20,6 +22,12 @@ public class Ghost : NetworkBehaviour
 
     private bool isWeakToLasers = true;
     private bool isSearchingForRetreat = true;
+    private bool isHoldingTorch = false;
+    private Vector3 torchHoldingPoint = new Vector3(0, 0, 0);
+
+    [SerializeField] private float grabRange;
+    [SerializeField] private LayerMask torchLayer;
+    private float distanceToTorch;
 
     public override void OnNetworkSpawn()
     {
@@ -47,7 +55,15 @@ public class Ghost : NetworkBehaviour
         {
             GetComponent<NetworkObject>().Despawn();
         }
+
+        distanceToTorch = new Vector3(transform.position.x - torch.transform.position.x, transform.position.y - torch.transform.position.y).magnitude;
+        if (distanceToTorch < grabRange && !isHoldingTorch)
+        {
+            StealTorch();
+            ScareGhost();
+        }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -58,6 +74,16 @@ public class Ghost : NetworkBehaviour
                 ScareGhost();
             }
         }
+
+        if (!isHoldingTorch)
+        {
+            if (collision.CompareTag("Torch"))
+            {
+                StealTorch();
+                ScareGhost();
+            }
+        }
+
     }
 
     private void ChaseTorch()
@@ -99,9 +125,54 @@ public class Ghost : NetworkBehaviour
         isChasing = false;
     }
 
+    private void StealTorch()
+    {
+        SetTorchBeingHeldBoolServerRpc(true);
+        CapsuleCollider2D torchCollider = torch.GetComponent<CapsuleCollider2D>();
+        Rigidbody2D torchRb = torch.GetComponent<Rigidbody2D>();
+
+        if (torch.transform.parent.gameObject.GetComponent<NetworkObject>().OwnerClientId!=0)
+        {
+            GiveTorchToHostServerRpc();
+        }
+
+        if (torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch != null)
+        {
+            GameObject playerHoldingTorch = torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch;
+            playerHoldingTorch.GetComponent<PlayerNetwork>().DropTorch();
+        }
+
+        torchCollider.enabled = false;
+        torch.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        torch.transform.position = transform.position + torchHoldingPoint;
+        torchRb.mass = 0;
+
+        RelativeJoint2D joint = this.AddComponent<RelativeJoint2D>();
+        joint.enableCollision = false;
+        joint.autoConfigureOffset = false;
+        joint.linearOffset = torchHoldingPoint;
+        joint.connectedBody = torchRb;
+
+        isHoldingTorch = true;
+        
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void GiveTorchToHostServerRpc()
+    {
+        torch.GetComponent<NetworkObject>().ChangeOwnership(0);
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawLine(torch.transform.position, transform.position);
+        Gizmos.DrawSphere(transform.position, grabRange);
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void SetTorchBeingHeldBoolServerRpc(bool status)
+    {
+        GameObject.Find("Torch(Clone)").GetComponent<Torch>().isBeingHeld.Value = status;
     }
 
 

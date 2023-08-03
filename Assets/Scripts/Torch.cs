@@ -11,6 +11,7 @@ public class Torch : NetworkBehaviour
 
     private GameObject torchSpawnPosition;
 
+    public GameObject playerHoldingTorch;
     public override void OnNetworkSpawn()
     {
         torchSpawnPosition = GameObject.Find("TorchSpawnPosition");

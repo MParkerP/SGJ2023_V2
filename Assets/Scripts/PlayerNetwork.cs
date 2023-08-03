@@ -178,6 +178,7 @@ public class PlayerNetwork : NetworkBehaviour
 
             if (torchRb != null)
             {
+                torchNetwork.GetComponent<Torch>().playerHoldingTorch = this.gameObject;
 
                 //deactivate torch collider to prevent bumping into other objects
                 CapsuleCollider2D torchCollider = playerTorch.GetComponent<CapsuleCollider2D>();
@@ -219,7 +220,7 @@ public class PlayerNetwork : NetworkBehaviour
     }
 
     //player drops torch object
-    private void DropTorch()
+    public void DropTorch()
     {
         ReleaseTorch(true);
         playerTorch = null;
@@ -347,7 +348,8 @@ public class PlayerNetwork : NetworkBehaviour
             if (directionFacing == "left") { playerTorch.transform.Rotate(new Vector3(0, 0, 10)); }
             else if (directionFacing == "right") { playerTorch.transform.Rotate(new Vector3(0, 0, -10)); }
         }
-  
+
+        torchNetwork.GetComponent<Torch>().playerHoldingTorch = null;
         SetTorchBeingHeldBoolServerRpc(false);
         isHoldingTorch = false;
     }
