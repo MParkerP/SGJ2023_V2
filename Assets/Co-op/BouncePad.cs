@@ -20,7 +20,7 @@ public class BouncePad : MonoBehaviour
         float padX = transform.position.x;
         float padY = transform.position.y;
 
-        if (collision.rigidbody && (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Torch")))
+        if (collision.rigidbody && (collision.gameObject.CompareTag("PlayerBody") || collision.gameObject.CompareTag("Torch")))
         {
             Vector3 launchDirection = new Vector3(bounceX - padX, bounceY - padY);
             collision.rigidbody.AddForce(launchDirection.normalized * launchForce);

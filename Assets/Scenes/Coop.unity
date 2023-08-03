@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -223,6 +227,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -296,7 +304,7 @@ GameObject:
   - component: {fileID: 36771266}
   m_Layer: 0
   m_Name: BounceDirection
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -462,6 +470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -607,6 +619,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -1051,6 +1067,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -1135,7 +1155,7 @@ GameObject:
   - component: {fileID: 81032182}
   m_Layer: 10
   m_Name: windmil (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1495,7 +1515,7 @@ GameObject:
   - component: {fileID: 82018007}
   m_Layer: 0
   m_Name: BounceDirection
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1652,6 +1672,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -1733,6 +1757,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -1846,6 +1874,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -1928,6 +1960,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -2009,6 +2045,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -2101,7 +2141,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &151552796
 GameObject:
@@ -2122,7 +2162,7 @@ GameObject:
   - component: {fileID: 151552798}
   m_Layer: 10
   m_Name: windmil (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2536,6 +2576,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -2909,6 +2953,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -3144,7 +3192,7 @@ GameObject:
   - component: {fileID: 178699581}
   m_Layer: 0
   m_Name: RotatingPlatforms
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3182,6 +3230,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -3435,6 +3487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatformHor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3546022481213006227, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 3679416898458192562, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -3535,6 +3591,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -3618,7 +3678,7 @@ GameObject:
   - component: {fileID: 201896077}
   m_Layer: 0
   m_Name: BounceDirection
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3652,6 +3712,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -3867,7 +3931,7 @@ GameObject:
   - component: {fileID: 224863254}
   m_Layer: 0
   m_Name: entranceGate
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4162,6 +4226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatformVert (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
 --- !u!4 &233763399 stripped
@@ -4180,7 +4248,7 @@ GameObject:
   - component: {fileID: 235494177}
   m_Layer: 0
   m_Name: ShiftingPillar (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4218,7 +4286,7 @@ GameObject:
   - component: {fileID: 248724625}
   m_Layer: 0
   m_Name: ShiftingPillar (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4255,6 +4323,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -4453,6 +4525,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -4535,6 +4611,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -4611,6 +4691,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -4813,6 +4897,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -4903,6 +4991,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -5116,6 +5208,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -5197,6 +5293,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -5468,6 +5568,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -5549,6 +5653,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -5632,6 +5740,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -5714,7 +5826,7 @@ GameObject:
   - component: {fileID: 329929023}
   m_Layer: 10
   m_Name: windmil (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5970,7 +6082,7 @@ GameObject:
   - component: {fileID: 339703254}
   m_Layer: 10
   m_Name: windmil (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6221,6 +6333,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -6599,7 +6715,7 @@ GameObject:
   - component: {fileID: 363015325}
   m_Layer: 10
   m_Name: windmil (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6882,6 +6998,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -6969,7 +7089,7 @@ GameObject:
   - component: {fileID: 377623523}
   m_Layer: 10
   m_Name: windmil (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7224,7 +7344,7 @@ GameObject:
   - component: {fileID: 381476902}
   m_Layer: 0
   m_Name: entranceGate (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7447,6 +7567,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -7612,6 +7736,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
 --- !u!4 &390658469 stripped
@@ -7772,7 +7900,7 @@ GameObject:
   - component: {fileID: 398929995}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8103,7 +8231,7 @@ GameObject:
   - component: {fileID: 404657805}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8434,6 +8562,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -8516,6 +8648,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -8596,6 +8732,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -8910,7 +9050,7 @@ GameObject:
   - component: {fileID: 430560067}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9235,6 +9375,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -9678,6 +9822,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -9759,6 +9907,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -9938,6 +10090,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -10146,6 +10302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicPlatform (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -10313,7 +10473,7 @@ GameObject:
   - component: {fileID: 462439355}
   m_Layer: 0
   m_Name: ShiftingPillar (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10381,6 +10541,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -10599,7 +10763,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &498023917
 MonoBehaviour:
@@ -10634,7 +10798,7 @@ GameObject:
   - component: {fileID: 503496486}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10966,7 +11130,7 @@ GameObject:
   - component: {fileID: 507379546}
   m_Layer: 10
   m_Name: windmil
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11329,6 +11493,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -11660,7 +11828,7 @@ Transform:
   - {fileID: 1157893308}
   - {fileID: 1782121500}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &541616634 stripped
 GameObject:
@@ -11775,7 +11943,7 @@ GameObject:
   - component: {fileID: 542400646}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12836,7 +13004,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &578768292
 GameObject:
@@ -12912,7 +13080,7 @@ GameObject:
   - component: {fileID: 580252652}
   m_Layer: 10
   m_Name: windmil (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13163,6 +13331,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -13463,7 +13635,7 @@ GameObject:
   - component: {fileID: 611302229}
   m_Layer: 10
   m_Name: windmil (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14052,6 +14224,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -15150,6 +15326,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -15223,7 +15403,7 @@ GameObject:
   - component: {fileID: 715502811}
   m_Layer: 0
   m_Name: BounceDirection
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15257,6 +15437,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -15423,6 +15607,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -15613,6 +15801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatformVert (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
 --- !u!4 &787796084 stripped
@@ -15665,6 +15857,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -15934,6 +16130,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -16041,6 +16241,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -16248,6 +16452,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_Name
       value: BasicPlatform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -16488,6 +16696,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -16561,7 +16773,7 @@ GameObject:
   - component: {fileID: 835835186}
   m_Layer: 0
   m_Name: ShiftingPillar (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16598,6 +16810,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -16815,7 +17031,7 @@ GameObject:
   - component: {fileID: 853121617}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17136,6 +17352,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_Name
       value: BasicPlatform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -17625,6 +17845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing2
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -17958,6 +18182,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
 --- !u!4 &946084442 stripped
@@ -18112,6 +18340,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -18608,6 +18840,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -18907,6 +19143,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
 --- !u!4 &966846866 stripped
@@ -19058,7 +19298,7 @@ GameObject:
   - component: {fileID: 968064588}
   m_Layer: 0
   m_Name: RotatingPlatforms (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19180,6 +19420,10 @@ PrefabInstance:
     - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
@@ -19518,7 +19762,7 @@ GameObject:
   - component: {fileID: 1003594754}
   m_Layer: 0
   m_Name: ShiftingPillar
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19771,7 +20015,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1058478583
 MonoBehaviour:
@@ -19800,6 +20044,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -20349,6 +20597,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -20562,6 +20814,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -20948,7 +21204,7 @@ GameObject:
   - component: {fileID: 1111476718}
   m_Layer: 0
   m_Name: RotatingPlatforms (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20982,6 +21238,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -21149,6 +21409,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -21230,6 +21494,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -21506,7 +21774,7 @@ GameObject:
   - component: {fileID: 1157893305}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21675,7 +21943,7 @@ GameObject:
   - component: {fileID: 1166274410}
   m_Layer: 10
   m_Name: windmil (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22415,6 +22683,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -22495,6 +22767,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -22697,6 +22973,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -22774,6 +23054,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -22985,6 +23269,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5558637479648213691, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_Mass
@@ -23250,7 +23538,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1322994605
 GameObject:
@@ -23315,7 +23603,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1330060687
 PrefabInstance:
@@ -23331,6 +23619,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -23665,6 +23957,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -23773,6 +24069,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -24179,7 +24479,7 @@ GameObject:
   - component: {fileID: 1401375272}
   m_Layer: 10
   m_Name: windmil (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24594,7 +24894,7 @@ GameObject:
   - component: {fileID: 1413486350}
   m_Layer: 0
   m_Name: RotatingPlatforms (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24886,6 +25186,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -25097,6 +25401,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -25188,7 +25496,7 @@ GameObject:
   - component: {fileID: 1434911643}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25510,7 +25818,7 @@ GameObject:
   - component: {fileID: 1437583352}
   m_Layer: 0
   m_Name: Windmill
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25680,6 +25988,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -25934,6 +26246,10 @@ PrefabInstance:
     - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
@@ -26260,7 +26576,7 @@ Transform:
   - {fileID: 1979529445}
   - {fileID: 703614486}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1512201526
 PrefabInstance:
@@ -26276,6 +26592,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -26354,6 +26674,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -26472,7 +26796,7 @@ GameObject:
   - component: {fileID: 1520027224}
   m_Layer: 10
   m_Name: windmil (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26817,6 +27141,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -27024,7 +27352,7 @@ GameObject:
   - component: {fileID: 1537405802}
   m_Layer: 0
   m_Name: ShiftingPillar (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27141,7 +27469,7 @@ RectTransform:
   m_Children:
   - {fileID: 1449149625}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -27429,6 +27757,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -27605,7 +27937,7 @@ GameObject:
   - component: {fileID: 1609310279}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28097,6 +28429,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -28336,6 +28672,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -28510,7 +28850,7 @@ GameObject:
   - component: {fileID: 1631826140}
   m_Layer: 10
   m_Name: windmil (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28994,6 +29334,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -29235,6 +29579,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -29535,6 +29883,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
 --- !u!4 &1656714675 stripped
@@ -29786,6 +30138,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -30143,6 +30499,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8630508286036088634, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_RootOrder
       value: 130
@@ -30289,6 +30649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatformVert (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
 --- !u!4 &1713910629 stripped
@@ -30310,6 +30674,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -30540,7 +30908,7 @@ GameObject:
   - component: {fileID: 1735128751}
   m_Layer: 0
   m_Name: ShiftingPillar (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30900,7 +31268,7 @@ GameObject:
   - component: {fileID: 1769054077}
   m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31225,7 +31593,7 @@ GameObject:
   - component: {fileID: 1782121501}
   m_Layer: 0
   m_Name: Ground (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31358,6 +31726,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -31736,6 +32108,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3546022481213006227, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 3679416898458192562, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -31762,7 +32138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4839786969811559303, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.19100645
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4839786969811559303, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31951,7 +32327,7 @@ GameObject:
   - component: {fileID: 1816717884}
   m_Layer: 0
   m_Name: ShiftingPillar (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32181,6 +32557,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -32603,6 +32983,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -32853,6 +33237,10 @@ PrefabInstance:
     - target: {fileID: 3546022481213006227, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3546022481213006227, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 3679416898458192562, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_SortingLayer
@@ -33202,7 +33590,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1876952193
 MonoBehaviour:
@@ -33528,6 +33916,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
 --- !u!4 &1888943274 stripped
@@ -33682,6 +34074,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -33763,6 +34159,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -33836,7 +34236,7 @@ GameObject:
   - component: {fileID: 1907930907}
   m_Layer: 0
   m_Name: RotatingPlatforms (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33870,6 +34270,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -34037,6 +34441,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -34137,7 +34545,7 @@ GameObject:
   - component: {fileID: 1949078125}
   m_Layer: 0
   m_Name: RotatingPlatforms (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34175,6 +34583,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -34925,6 +35337,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -35281,6 +35697,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -35362,7 +35782,7 @@ GameObject:
   - component: {fileID: 2015997981}
   m_Layer: 10
   m_Name: windmil (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35795,6 +36215,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
 --- !u!4 &2038688988 stripped
@@ -36110,7 +36534,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2060305554
 PrefabInstance:
@@ -36130,6 +36554,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -36204,7 +36632,7 @@ GameObject:
   - component: {fileID: 2066250883}
   m_Layer: 0
   m_Name: ShiftingPillar (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36473,6 +36901,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5558637479648213691, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_Mass
@@ -36900,6 +37332,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -37235,6 +37671,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -37486,6 +37926,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3546022481213006227, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 3679416898458192562, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -37512,7 +37956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4839786969811559303, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.19100645
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4839786969811559303, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37766,6 +38210,10 @@ PrefabInstance:
     - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 567509871431925263, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_SortingLayer
@@ -38131,6 +38579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing1
       objectReference: {fileID: 0}
+    - target: {fileID: 421607444537513262, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8630508286036088634, guid: 45c0f8000ded1ec49bd288d23c47de40, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -38352,6 +38804,10 @@ PrefabInstance:
     - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
       propertyPath: m_Name
       value: MovingPlatformVert
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269573910400088767, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8029ed2ad2d43664d85de9fb28cb6802, type: 3}

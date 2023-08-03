@@ -31,6 +31,80 @@ Transform:
   m_Father: {fileID: 3854209889561902992}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1278271100153373681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546040186802764128}
+  - component: {fileID: 6286689709607113628}
+  - component: {fileID: 5575408725961637063}
+  m_Layer: 6
+  m_Name: JumpCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &546040186802764128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278271100153373681}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3854209889561902992}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &6286689709607113628
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278271100153373681}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.004390113, y: -0.02403676}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.157385, y: 0.01947521}
+  m_EdgeRadius: 0
+--- !u!114 &5575408725961637063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278271100153373681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029d8897c9021074bb87cf72160261ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reenableJumpTags:
+  - Ground
+  playerObject: {fileID: 3854209889561902996}
 --- !u!1 &3854209889561902996
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,6 +143,7 @@ Transform:
   m_Children:
   - {fileID: 8026316682675487311}
   - {fileID: 1629945830488323739}
+  - {fileID: 546040186802764128}
   m_Father: {fileID: 3854209889814390697}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -233,9 +308,13 @@ MonoBehaviour:
   torchLayer:
     serializedVersion: 2
     m_Bits: 128
+  ghostLayer:
+    serializedVersion: 2
+    m_Bits: 2048
   isHoldingTorch: 0
   directionFacing: left
   throwForce: 750
+  isGrounded: 0
 --- !u!95 &8986552372467320217
 Animator:
   serializedVersion: 5
@@ -420,22 +499,22 @@ MonoBehaviour:
   - position: {x: -0.114567846, y: 0.17097253, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1141, y: -0.0296, z: 0}
+  - position: {x: -0.1203, y: -0.0422, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1201, y: -0.0342, z: 0}
+  - position: {x: 0.1301, y: -0.0327, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1353, y: 0.1764, z: 0}
+  - position: {x: 0.1199, y: 0.1654, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1078, y: 0.1708, z: 0}
+  - position: {x: -0.1157, y: 0.1686, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000002000100000003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.010366075, y: 0.06880329, z: 0}
-    m_Extent: {x: 0.12493392, y: 0.10759672, z: 0}
+    m_Center: {x: 0.0048999973, y: 0.065042354, z: 0}
+    m_Extent: {x: 0.1252, y: 0.10724235, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

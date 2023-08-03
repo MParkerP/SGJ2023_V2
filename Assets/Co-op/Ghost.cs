@@ -14,7 +14,7 @@ public class Ghost : NetworkBehaviour
     [SerializeField] private float retreatSpeed;
     private Rigidbody2D ghostRb;
 
-    [SerializeField] private bool isChasing;
+    [SerializeField] public bool isChasing;
 
     [SerializeField] private GameObject leftRetreat;
     [SerializeField] private GameObject rightRetreat;
@@ -28,6 +28,7 @@ public class Ghost : NetworkBehaviour
     [SerializeField] private float grabRange;
     [SerializeField] private LayerMask torchLayer;
     private float distanceToTorch;
+    public bool isWeakToAttacks;
 
     public override void OnNetworkSpawn()
     {
@@ -39,6 +40,11 @@ public class Ghost : NetworkBehaviour
 
     private void Update()
     {
+        if (isHoldingTorch)
+        {
+            torch.transform.position = transform.position;
+        }
+
         if (torch!= null)
         {
             if (isChasing)
@@ -120,13 +126,19 @@ public class Ghost : NetworkBehaviour
         }
     }
 
-    private void ScareGhost()
+    public void ScareGhost()
     {
         isChasing = false;
     }
 
     private void StealTorch()
     {
+        if (torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch != null)
+        {
+            GameObject playerHoldingTorch = torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch;
+            playerHoldingTorch.GetComponent<PlayerNetwork>().DropTorch();
+        }
+
         SetTorchBeingHeldBoolServerRpc(true);
         CapsuleCollider2D torchCollider = torch.GetComponent<CapsuleCollider2D>();
         Rigidbody2D torchRb = torch.GetComponent<Rigidbody2D>();
@@ -134,12 +146,7 @@ public class Ghost : NetworkBehaviour
         if (torch.transform.parent.gameObject.GetComponent<NetworkObject>().OwnerClientId!=0)
         {
             GiveTorchToHostServerRpc();
-        }
-
-        if (torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch != null)
-        {
-            GameObject playerHoldingTorch = torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch;
-            playerHoldingTorch.GetComponent<PlayerNetwork>().DropTorch();
+            SetTorchPositionServerRpc();
         }
 
         torchCollider.enabled = false;
@@ -160,7 +167,19 @@ public class Ghost : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     private void GiveTorchToHostServerRpc()
     {
-        torch.GetComponent<NetworkObject>().ChangeOwnership(0);
+        torch.transform.parent.gameObject.GetComponent<NetworkObject>().ChangeOwnership(0);
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void SetTorchPositionServerRpc()
+    {
+        SetTorchPositionClientRpc();
+    }
+
+    [ClientRpc]
+    private void SetTorchPositionClientRpc()
+    {
+        torch.transform.transform.position = transform.position;
     }
 
     private void OnDrawGizmosSelected()

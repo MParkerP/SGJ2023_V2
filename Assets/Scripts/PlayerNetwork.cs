@@ -25,6 +25,7 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private Transform grabPoint;
     [SerializeField] private float grabRadius;
     [SerializeField] private LayerMask torchLayer;
+    [SerializeField] private LayerMask ghostLayer;
     [SerializeField] private bool isHoldingTorch = false;
 
     private Vector3 leftTorchPoint = new Vector3(-0.7f, 0.6f);
@@ -39,6 +40,8 @@ public class PlayerNetwork : NetworkBehaviour
     private GameObject playerSpawnPosition;
     private bool isLookingForSpawn = true;
 
+    [SerializeField] public bool isGrounded;
+    [SerializeField] private bool isTesting;
 
     //network variables
     private NetworkVariable<int> randomNumber = new NetworkVariable<int>(1, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
@@ -112,7 +115,7 @@ public class PlayerNetwork : NetworkBehaviour
             ThrowTorch();
         }
 
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Attack();
         }
@@ -121,10 +124,36 @@ public class PlayerNetwork : NetworkBehaviour
     private void Attack()
     {
         playerAn.SetTrigger("Attack");
+        Collider2D[] ghostsHit = Physics2D.OverlapCircleAll(grabPoint.transform.position, grabRadius, ghostLayer);
+        if (ghostsHit.Length > 0)
+        {
+            GameObject ghost = ghostsHit[0].gameObject;
+            if (ghost.GetComponent<Ghost>().isWeakToAttacks && ghost.GetComponent<Ghost>().isChasing) 
+            {
+                ScareGhostServerRpc("Ghost");
+            }
+        }
+
     }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void ScareGhostServerRpc(string ghostTag)
+    {
+        GameObject.FindWithTag("Ghost").GetComponent<Ghost>().ScareGhost();
+    }
+
     private void Jump()
     {
-        playerRb.AddForce(Vector3.up * jumpForce);
+        if (isTesting) { playerRb.AddForce(Vector3.up * jumpForce); }
+        else
+        {
+            if (isGrounded)
+            {
+                playerRb.AddForce(Vector3.up * jumpForce);
+                isGrounded= false;
+            }
+        }
+        
     }
 
     private void InteractWithTorch()

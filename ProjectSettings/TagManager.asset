@@ -7,6 +7,7 @@ TagManager:
   - Torch
   - Laser
   - PlayerBody
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Laser
   - ThroughWall
   - WIndmill
-  - 
+  - Ghost
   - 
   - 
   - 
