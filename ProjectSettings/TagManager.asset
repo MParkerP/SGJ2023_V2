@@ -8,6 +8,7 @@ TagManager:
   - Laser
   - PlayerBody
   - Ground
+  - Ghost
   layers:
   - Default
   - TransparentFX
