@@ -29,13 +29,20 @@ public class GhostSpawner : NetworkBehaviour
         {
             if (torch.transform.position.x < laserXPos)
             {
-                GameObject ghost = Instantiate(ghostPrefab, leftSpawn.transform.transform.position, ghostPrefab.transform.rotation);
-                ghost.GetComponent<NetworkObject>().Spawn();
+                if (this.IsOwner)
+                {
+                    GameObject ghost = Instantiate(ghostPrefab, leftSpawn.transform.transform.position, ghostPrefab.transform.rotation);
+                    ghost.GetComponent<NetworkObject>().Spawn();
+                }
+                
             }
-            else if (torch.transform.position.x > laserXPos)
+            else
             {
-                GameObject ghost = Instantiate(ghostPrefab, rightSpawn.transform.transform.position, ghostPrefab.transform.rotation);
-                ghost.GetComponent<NetworkObject>().Spawn();
+                if (this.IsOwner)
+                {
+                    GameObject ghost = Instantiate(ghostPrefab, rightSpawn.transform.transform.position, ghostPrefab.transform.rotation);
+                    ghost.GetComponent<NetworkObject>().Spawn();
+                }
             }
         }
     }
