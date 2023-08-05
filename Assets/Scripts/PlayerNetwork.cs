@@ -10,6 +10,8 @@ using UnityEditor.PackageManager;
 using UnityEngine.Rendering.Universal;
 using JetBrains.Annotations;
 using UnityEngine.SceneManagement;
+using QFSW.QC;
+using UnityEngine.Events;
 
 public class PlayerNetwork : NetworkBehaviour
 {
@@ -43,6 +45,9 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] public bool isGrounded;
     [SerializeField] private bool isTesting;
 
+    [SerializeField] private GameObject disconnectMessage;
+    public bool isShowingDisconnect;
+
     //network variables
     private NetworkVariable<int> randomNumber = new NetworkVariable<int>(1, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
 
@@ -58,6 +63,8 @@ public class PlayerNetwork : NetworkBehaviour
 
         //set player object name to the client id so that it can be located easily via RPC
         this.name = OwnerClientId.ToString();
+
+        isShowingDisconnect = true;
     }
 
     private void Awake()
@@ -413,6 +420,7 @@ public class PlayerNetwork : NetworkBehaviour
             }
         }
     }
+
 
     private void OnDrawGizmosSelected()
     {

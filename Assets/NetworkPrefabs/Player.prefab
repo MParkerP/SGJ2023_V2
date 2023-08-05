@@ -315,6 +315,24 @@ MonoBehaviour:
   directionFacing: left
   throwForce: 750
   isGrounded: 0
+  isTesting: 0
+  disconnectMessage: {fileID: 3236747520116519899, guid: ec618a3207fe6074faa331ac83b5d891, type: 3}
+  isShowingDisconnect: 0
+  disconnectFromGame:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &8986552372467320217
 Animator:
   serializedVersion: 5
@@ -499,22 +517,22 @@ MonoBehaviour:
   - position: {x: -0.114567846, y: 0.17097253, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1203, y: -0.0422, z: 0}
+  - position: {x: -0.1244, y: -0.0333, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1301, y: -0.0327, z: 0}
+  - position: {x: 0.1327, y: -0.0419, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1199, y: 0.1654, z: 0}
+  - position: {x: 0.1249, y: 0.1747, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1157, y: 0.1686, z: 0}
+  - position: {x: -0.1101, y: 0.1753, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000002000100000003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.0048999973, y: 0.065042354, z: 0}
-    m_Extent: {x: 0.1252, y: 0.10724235, z: 0}
+    m_Center: {x: 0.0041499995, y: 0.0667, z: 0}
+    m_Extent: {x: 0.12855, y: 0.108600006, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
