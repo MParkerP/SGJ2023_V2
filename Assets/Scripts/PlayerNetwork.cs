@@ -165,6 +165,7 @@ public class PlayerNetwork : NetworkBehaviour
 
     private void InteractWithTorch()
     {
+        playerAn.SetTrigger("PickUp");
         if (!isHoldingTorch)
         {
             GrabTorch();
