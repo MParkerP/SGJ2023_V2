@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1611961223870537982}
   - component: {fileID: 8319714386595033426}
   - component: {fileID: 2354490245270436531}
+  - component: {fileID: 5319902157870674281}
   m_Layer: 11
   m_Name: Ghost
   m_TagString: Ghost
@@ -32,8 +33,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7106588701152306234}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.9646, y: 61.348, z: 0}
-  m_LocalScale: {x: 1.4109076, y: 1.3106669, z: 1.0767}
+  m_LocalPosition: {x: -20.4228, y: 60.8446, z: 0}
+  m_LocalScale: {x: 4.535317, y: 4.2130966, z: 3.4610174}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,8 +81,8 @@ SpriteRenderer:
   m_SortingLayerID: -387016795
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9245283, g: 0.8852795, b: 0.8852795, a: 0.49019608}
+  m_Sprite: {fileID: -1558840833, guid: cbcda8639e3b3a143b04ab324c32797e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -230,22 +231,22 @@ MonoBehaviour:
   - position: {x: -0.5, y: 0.5, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.5071, y: -0.503, z: 0}
+  - position: {x: -0.5097, y: -0.4914, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.5044, y: -0.5064, z: 0}
+  - position: {x: 0.5018, y: -0.5044, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.5085, y: 0.4965, z: 0}
+  - position: {x: 0.5093, y: 0.5094, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.5023, y: 0.5008, z: 0}
+  - position: {x: -0.5037, y: 0.5068, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000003000100010003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.00069999695, y: -0.0027999878, z: 0}
-    m_Extent: {x: 0.5078, y: 0.5036, z: 0}
+    m_Center: {x: -0.00020000339, y: 0.0024999976, z: 0}
+    m_Extent: {x: 0.5095, y: 0.5069, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -302,3 +303,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d7c879794dfda4687da0e400131852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &5319902157870674281
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106588701152306234}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a87816651d0f0e7448fa43f64539ae24, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

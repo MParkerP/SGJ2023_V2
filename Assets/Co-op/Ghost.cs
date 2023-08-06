@@ -29,9 +29,11 @@ public class Ghost : NetworkBehaviour
     [SerializeField] private LayerMask torchLayer;
     private float distanceToTorch;
     public bool isWeakToAttacks;
+    private Animator ghostAn;
 
     public override void OnNetworkSpawn()
     {
+        ghostAn = GetComponent<Animator>();
         torch = GameObject.Find("TorchSprite");
         ghostRb = GetComponent<Rigidbody2D>();
         leftRetreat = GameObject.Find("LeftRetreat");
@@ -133,6 +135,7 @@ public class Ghost : NetworkBehaviour
 
     private void StealTorch()
     {
+        ghostAn.SetTrigger("Lick");
         if (torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch != null)
         {
             GameObject playerHoldingTorch = torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch;
