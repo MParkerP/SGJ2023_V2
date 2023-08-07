@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
-public class BouncePadButton : MonoBehaviour
+public class BouncePadButton : NetworkBehaviour
 {
     [SerializeField] private GameObject bouncePad;
     [SerializeField] private float bounceForce;

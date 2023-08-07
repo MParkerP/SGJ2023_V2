@@ -1096,7 +1096,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41580778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -296.54, y: 31.23, z: 2.093185}
+  m_LocalPosition: {x: -222.96, y: 31.46, z: 2.093185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1265,6 +1265,7 @@ GameObject:
   - component: {fileID: 49442470}
   - component: {fileID: 49442469}
   - component: {fileID: 49442468}
+  - component: {fileID: 49442471}
   m_Layer: 0
   m_Name: pinkMovingPlatform
   m_TagString: Untagged
@@ -1283,7 +1284,8 @@ Transform:
   m_LocalPosition: {x: 29.09, y: -4.98, z: -0.42719114}
   m_LocalScale: {x: 0.49129692, y: 2.7743037, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 168916033}
   m_Father: {fileID: 94263816}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
@@ -1386,6 +1388,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &49442471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49442466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6cced1904c2a445b0dd369d443e247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceDirection: {fileID: 168916032}
+  launchForce: 0
 --- !u!1001 &67580128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3904,6 +3920,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2141774694736095974, guid: 2e2a7a004d0fffc42880e87efc3e6cac, type: 3}
   m_PrefabInstance: {fileID: 165636053}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &168916032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 168916033}
+  m_Layer: 0
+  m_Name: BounceDirecton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &168916033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168916032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.3, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 49442467}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &170786463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14841,7 +14888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bouncePad: {fileID: 675726925}
-  bounceForce: 500
+  bounceForce: 2000
 --- !u!1 &469797477
 GameObject:
   m_ObjectHideFlags: 0
@@ -20361,7 +20408,7 @@ GameObject:
   - component: {fileID: 675726930}
   m_Layer: 0
   m_Name: movingPlatformLv2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32668,6 +32715,7 @@ GameObject:
   - component: {fileID: 1130272282}
   - component: {fileID: 1130272281}
   - component: {fileID: 1130272280}
+  - component: {fileID: 1130272283}
   m_Layer: 0
   m_Name: pinkButton
   m_TagString: Ground
@@ -32789,6 +32837,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1130272283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130272278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3fd818bca180e9468be58fa98cd82b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bouncePad: {fileID: 49442466}
+  bounceForce: 1500
 --- !u!1001 &1143471383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35762,6 +35824,8 @@ GameObject:
   - component: {fileID: 1255449126}
   - component: {fileID: 1255449125}
   - component: {fileID: 1255449124}
+  - component: {fileID: 1255449127}
+  - component: {fileID: 1255449128}
   m_Layer: 0
   m_Name: buttonPhantomPlatformC
   m_TagString: Ground
@@ -35883,6 +35947,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1255449127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255449122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 3756501020
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &1255449128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255449122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f62b46b1225c345923c0270fc56463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phantomPlats:
+  - {fileID: 1316753332}
 --- !u!1001 &1267025575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45821,7 +45918,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572375586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -296.84, y: 30.929989, z: 2.093185}
+  m_LocalPosition: {x: -223.26, y: 31.159988, z: 2.093185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45993,6 +46090,8 @@ GameObject:
   - component: {fileID: 1578616107}
   - component: {fileID: 1578616106}
   - component: {fileID: 1578616105}
+  - component: {fileID: 1578616109}
+  - component: {fileID: 1578616108}
   m_Layer: 0
   m_Name: buttonPhantomPlatformA
   m_TagString: Ground
@@ -46114,6 +46213,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1578616108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578616103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 2805037984
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &1578616109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578616103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f62b46b1225c345923c0270fc56463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phantomPlats:
+  - {fileID: 165000474}
+  - {fileID: 986517488}
+  - {fileID: 1188998837}
+  - {fileID: 1912575706}
+  - {fileID: 1646052218}
+  - {fileID: 559315982}
 --- !u!1 &1585799420
 GameObject:
   m_ObjectHideFlags: 0
@@ -54731,6 +54868,8 @@ GameObject:
   - component: {fileID: 1882748223}
   - component: {fileID: 1882748222}
   - component: {fileID: 1882748221}
+  - component: {fileID: 1882748225}
+  - component: {fileID: 1882748224}
   m_Layer: 0
   m_Name: buttonPhantomPlatformB
   m_TagString: Ground
@@ -54852,6 +54991,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1882748224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882748219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 148243668
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &1882748225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882748219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f62b46b1225c345923c0270fc56463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phantomPlats:
+  - {fileID: 734293752}
+  - {fileID: 645948852}
+  - {fileID: 1971100812}
+  - {fileID: 2142900144}
+  - {fileID: 130467365}
 --- !u!1 &1900922790
 GameObject:
   m_ObjectHideFlags: 0
@@ -63177,7 +63353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130001927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -276.4, y: 43.6, z: -10}
+  m_LocalPosition: {x: -204.3, y: 43.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
