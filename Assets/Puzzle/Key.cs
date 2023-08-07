@@ -12,9 +12,11 @@ public class Key : NetworkBehaviour
         if (collision.CompareTag("PlayerBody"))
         {
             DestroyDoorServerRpc();
-            this.GetComponent<NetworkObject>().Despawn();
+            DestroyKeyServerRpc();
         }
     }
+
+
 
 /*    private void OpenDoor()
     {
@@ -26,6 +28,13 @@ public class Key : NetworkBehaviour
     {
         GameObject destroyDoor = GameObject.Find(door.name + "(Clone)");
         destroyDoor.GetComponent<NetworkObject>().Despawn();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void DestroyKeyServerRpc()
+    {
+        GameObject destroyKey = this.gameObject;
+        destroyKey.GetComponent<NetworkObject>().Despawn();
     }
 
 }
