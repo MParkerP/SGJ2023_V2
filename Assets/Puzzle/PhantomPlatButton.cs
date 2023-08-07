@@ -9,7 +9,7 @@ public class PhantomPlatButton : NetworkBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("PlayerBody") && collision.gameObject.transform.parent == NetworkManager.Singleton.LocalClient.PlayerObject.gameObject)
+        if (collision.gameObject.CompareTag("PlayerBody") && collision.gameObject.transform.parent.GetComponent<NetworkObject>().IsLocalPlayer)
         {
             TogglePhantomPlatsServerRpc();
         }
