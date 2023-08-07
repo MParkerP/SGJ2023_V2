@@ -57,8 +57,28 @@ public class DisconnectController : NetworkBehaviour
     {
         if(NetworkManager.Singleton.LocalClientId == 0)
         {
-            NetworkManager.SceneManager.UnloadScene(SceneManager.GetActiveScene());
+            /*NetworkManager.SceneManager.UnloadScene(SceneManager.GetActiveScene());
+            NetworkManager.SceneManager.LoadScene("Game", LoadSceneMode.Single);*/
+
+            ResetPlayersServerRpc();
+
+            GameObject.FindWithTag("Torch").GetComponent<NetworkObject>().Despawn();
+
             NetworkManager.SceneManager.LoadScene("Game", LoadSceneMode.Single);
+        }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void ResetPlayersServerRpc()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("PlayerBody");
+        foreach (GameObject p in players)
+        {
+            if (p.GetComponent<RelativeJoint2D>() != null)
+            {
+                p.GetComponent<PlayerNetwork>().DropTorch();
+            }
+            p.transform.position = GameObject.Find("PlayerSpawnPosition").transform.position;
         }
     }
 

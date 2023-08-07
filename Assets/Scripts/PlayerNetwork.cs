@@ -28,7 +28,7 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private float grabRadius;
     [SerializeField] private LayerMask torchLayer;
     [SerializeField] private LayerMask ghostLayer;
-    [SerializeField] private bool isHoldingTorch = false;
+    [SerializeField] bool isHoldingTorch = false;
 
     private Vector3 leftTorchPoint = new Vector3(-0.7f, 0.6f);
     private Vector3 rightTorchPoint = new Vector3(0.7f, 0.6f);
@@ -122,7 +122,7 @@ public class PlayerNetwork : NetworkBehaviour
             ThrowTorch();
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && !isHoldingTorch)
         {
             Attack();
         }
