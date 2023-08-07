@@ -12,7 +12,7 @@ public class BouncePadButton : NetworkBehaviour
     {
         if (collision.gameObject.CompareTag("PlayerBody"))
         {
-            SetBouncePadForceServerRpc(bounceForce);
+            SetBouncePadForceServerRpc();
         }
     }
 
@@ -25,32 +25,18 @@ public class BouncePadButton : NetworkBehaviour
     }
 
     [ServerRpc(RequireOwnership = false)]
-    private void SetBouncePadForceServerRpc(float forceAmount)
+    private void SetBouncePadForceServerRpc()
     {
-        if (bouncePad != null)
-        {
-            BouncePad bouncePadComp = bouncePad.GetComponent<BouncePad>();
-            if (bouncePadComp != null)
-            {
-                bouncePadComp.launchForce = forceAmount;
-            }
-        }
+        SetBouncePadForceClientRpc(bounceForce);
     }
 
     [ServerRpc(RequireOwnership = false)]
     private void SetBouncePadForceZeroServerRpc()
     {
-        if (bouncePad != null)
-        {
-            BouncePad bouncePadComp = bouncePad.GetComponent<BouncePad>();
-            if (bouncePadComp != null)
-            {
-                bouncePadComp.launchForce = 0;
-            }
-        }
+        SetBouncePadForceClientRpc(0);
     }
 
- /*   [ClientRpc]
+    [ClientRpc]
     private void SetBouncePadForceClientRpc(float forceAmount)
     {
         if (bouncePad != null)
@@ -61,5 +47,5 @@ public class BouncePadButton : NetworkBehaviour
                 bouncePadComp.launchForce = forceAmount;
             }
         }
-    }*/
+    }
 }
