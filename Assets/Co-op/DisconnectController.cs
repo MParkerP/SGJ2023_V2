@@ -71,15 +71,19 @@ public class DisconnectController : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     private void ResetPlayersServerRpc()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("PlayerBody");
-        foreach (GameObject p in players)
+        MovePlayerClientRpc();
+    }
+
+    [ClientRpc]
+    private void MovePlayerClientRpc()
+    {
+        GameObject localPlayer = GameObject.FindWithTag(NetworkManager.Singleton.LocalClientId.ToString());
+        if (localPlayer.GetComponent<RelativeJoint2D>() != null)
         {
-            if (p.GetComponent<RelativeJoint2D>() != null)
-            {
-                p.GetComponent<PlayerNetwork>().DropTorch();
-            }
-            p.transform.position = GameObject.Find("PlayerSpawnPosition").transform.position;
+            localPlayer.GetComponent<PlayerNetwork>().DropTorch();
         }
+
+        localPlayer.transform.position = GameObject.Find("PlayerSpawnPosition").transform.position;
     }
 
     IEnumerator ForcedDisconnect()

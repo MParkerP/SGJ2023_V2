@@ -6,12 +6,16 @@ using UnityEngine;
 public class JoinCodeDisplaySpawner : NetworkBehaviour
 {
     [SerializeField] GameObject codeCanvas;
-
+    private bool isDisplayed = false;
     public void SpawnCanvas()
     {
         Debug.Log(Static_LobbyData.LobbyCode);
+        if (!isDisplayed)
+        {
+            GameObject canvas = Instantiate(codeCanvas, Vector3.zero, Quaternion.identity);
+            canvas.GetComponent<NetworkObject>().Spawn();
+            isDisplayed = true;
+        }
 
-        GameObject canvas = Instantiate(codeCanvas, Vector3.zero, Quaternion.identity);
-        canvas.GetComponent<NetworkObject>().Spawn();
     }
 }
