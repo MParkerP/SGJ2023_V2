@@ -15,13 +15,13 @@ public class PhantomPlatButton : NetworkBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+/*    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("PlayerBody"))
         {
             TogglePhantomPlatsServerRpc();
         }
-    }
+    }*/
 
     [ServerRpc(RequireOwnership = false)]
     private void TogglePhantomPlatsServerRpc()
