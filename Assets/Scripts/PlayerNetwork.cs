@@ -187,7 +187,6 @@ public class PlayerNetwork : NetworkBehaviour
         {
             //get torch from array of colliders and access its RB
             GameObject torch = torchesHit[0].gameObject;
-            playerTorch = torch;
             Rigidbody2D torchRb = torch.GetComponent<Rigidbody2D>();
             torchNetwork = torch.transform.parent.gameObject;
 
@@ -197,6 +196,7 @@ public class PlayerNetwork : NetworkBehaviour
                 Debug.Log("shouldnt be able to grab torch");
                 return;
             }
+            playerTorch = torch;
 
             //set torch object to being held
             SetTorchBeingHeldBoolServerRpc(true);
@@ -310,10 +310,6 @@ public class PlayerNetwork : NetworkBehaviour
     {
         playerSR.flipX = false;
         RotatePlayerSpriteServerRpc(false);
-        if (this.IsServer)
-        {
-
-        }
         directionFacing = "left";
 
         if (playerTorch != null)
