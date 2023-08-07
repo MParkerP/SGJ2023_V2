@@ -10,6 +10,7 @@ public class ObjectSpawnManager : NetworkBehaviour
 {
 
     [SerializeField] private GameObject torch;
+    [SerializeField] private GameObject[] doorsAndKeys;
     private Action spawnGameObjects;
 
     public override void OnNetworkSpawn()
@@ -17,11 +18,12 @@ public class ObjectSpawnManager : NetworkBehaviour
         //add all functions that spawn objects
         spawnGameObjects += SpawnTorch;
 
+        spawnGameObjects += SpawnDoorsAndKeys;
+
         //spawn all the objects
         spawnGameObjects?.Invoke();
     }
 
-    [Command]
     private void SpawnTorch()
     {
         if (this.IsOwner)
@@ -29,5 +31,18 @@ public class ObjectSpawnManager : NetworkBehaviour
             GameObject theTorch = Instantiate(torch, new Vector3(0, 2, 0), Quaternion.Euler(new Vector3(0,0,10)));
             theTorch.GetComponent<NetworkObject>().Spawn();
         }
+    }
+
+    private void SpawnDoorsAndKeys()
+    {
+        if (this.IsOwner)
+        {
+            foreach(GameObject thing in doorsAndKeys)
+            {
+                GameObject theThing = Instantiate(thing);
+                theThing.GetComponent<NetworkObject>().Spawn();
+            }
+        }
+
     }
 }

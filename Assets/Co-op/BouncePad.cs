@@ -6,7 +6,7 @@ using UnityEngine;
 public class BouncePad : MonoBehaviour
 {
     [SerializeField] private GameObject bounceDirection;
-    [SerializeField] private float launchForce;
+    [SerializeField] public float launchForce;
 
     private void OnDrawGizmosSelected()
     {
