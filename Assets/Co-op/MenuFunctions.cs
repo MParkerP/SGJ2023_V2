@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuFunctions : NetworkBehaviour
 {
+    private void Start()
+    {
+        Static_LobbyData.isEverythingSpawned = false;
+    }
+
     public void QuitToMainMenu()
     {
         if (NetworkManager.Singleton != null)

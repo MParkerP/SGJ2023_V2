@@ -15,6 +15,7 @@ public class ObjectSpawnManager : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
+
         //add all functions that spawn objects
         spawnGameObjects += SpawnTorch;
 
