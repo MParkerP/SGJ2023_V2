@@ -29,7 +29,7 @@ public class ObjectSpawnManager : NetworkBehaviour
 
     private void SpawnTorch()
     {
-        if (this.IsOwner && !Static_LobbyData.isEverythingSpawned)
+        if (this.IsOwner)// && !Static_LobbyData.isEverythingSpawned)
         {
             GameObject theTorch = Instantiate(torch, new Vector3(0, 2, 0), Quaternion.Euler(new Vector3(0,0,10)));
             theTorch.GetComponent<NetworkObject>().Spawn();
@@ -38,7 +38,7 @@ public class ObjectSpawnManager : NetworkBehaviour
 
     private void SpawnDoorsAndKeys()
     {
-        if (this.IsOwner && !Static_LobbyData.isEverythingSpawned)
+        if (this.IsOwner)// && !Static_LobbyData.isEverythingSpawned)
         {
             Debug.Log("I spawned door get owned noob");
             foreach(GameObject thing in doorsAndKeys)
@@ -54,7 +54,7 @@ public class ObjectSpawnManager : NetworkBehaviour
     public void SpawnCanvas()
     {
         Debug.Log(Static_LobbyData.LobbyCode);
-        if (this.IsOwner && !Static_LobbyData.isEverythingSpawned)
+        if (this.IsOwner)// && !Static_LobbyData.isEverythingSpawned)
         {
             Debug.Log("spawned join code yrr");
             GameObject canvas = Instantiate(codeCanvas, Vector3.zero, Quaternion.identity);
