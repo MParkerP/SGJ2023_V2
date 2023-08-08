@@ -5,6 +5,7 @@ using UnityEngine;
 public static class Static_LobbyData
 {
     public static string LobbyCode;
+    public static bool isEverythingSpawned = false;
 
     public enum LobbyStatus
     {

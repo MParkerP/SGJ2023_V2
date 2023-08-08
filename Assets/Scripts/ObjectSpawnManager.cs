@@ -26,7 +26,7 @@ public class ObjectSpawnManager : NetworkBehaviour
 
     private void SpawnTorch()
     {
-        if (this.IsOwner)
+        if (this.IsOwner && !Static_LobbyData.isEverythingSpawned)
         {
             GameObject theTorch = Instantiate(torch, new Vector3(0, 2, 0), Quaternion.Euler(new Vector3(0,0,10)));
             theTorch.GetComponent<NetworkObject>().Spawn();
@@ -35,7 +35,7 @@ public class ObjectSpawnManager : NetworkBehaviour
 
     private void SpawnDoorsAndKeys()
     {
-        if (this.IsOwner)
+        if (this.IsOwner && !Static_LobbyData.isEverythingSpawned)
         {
             foreach(GameObject thing in doorsAndKeys)
             {
@@ -44,5 +44,10 @@ public class ObjectSpawnManager : NetworkBehaviour
             }
         }
 
+    }
+
+    public void SetObjectrsSpawned()
+    {
+        Static_LobbyData.isEverythingSpawned = true;
     }
 }
