@@ -52,4 +52,10 @@ public class ObjectSpawnManager : NetworkBehaviour
     {
         Static_LobbyData.isEverythingSpawned = true;
     }
+
+    [Command]
+    private void DispalyBool()
+    {
+        Debug.Log(Static_LobbyData.isEverythingSpawned);
+    }
 }
