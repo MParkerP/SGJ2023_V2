@@ -38,6 +38,7 @@ public class ObjectSpawnManager : NetworkBehaviour
     {
         if (this.IsOwner && !Static_LobbyData.isEverythingSpawned)
         {
+            Debug.Log("I spawned door get owned noob");
             foreach(GameObject thing in doorsAndKeys)
             {
                 GameObject theThing = Instantiate(thing);
