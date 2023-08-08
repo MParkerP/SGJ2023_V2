@@ -84,6 +84,8 @@ public class DisconnectController : NetworkBehaviour
         }
 
         localPlayer.transform.position = GameObject.Find("PlayerSpawnPosition").transform.position;
+        localPlayer.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+
     }
 
     IEnumerator ForcedDisconnect()
