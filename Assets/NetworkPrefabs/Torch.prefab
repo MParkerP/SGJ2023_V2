@@ -430,4 +430,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBeingHeld:
     m_InternalValue: 0
+  playerRange: 5.31
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  gameOverTimer: 3
+  isCountdownStarted: 0
   playerHoldingTorch: {fileID: 0}

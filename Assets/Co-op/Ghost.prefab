@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1558840833, guid: cbcda8639e3b3a143b04ab324c32797e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6862745}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -105,9 +105,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.07039349, y: 0}
   serializedVersion: 2
-  m_Radius: 0.91457653
+  m_Radius: 0.316341
 --- !u!50 &7106588701152306232
 Rigidbody2D:
   serializedVersion: 4
@@ -149,7 +149,7 @@ MonoBehaviour:
   leftRetreat: {fileID: 0}
   rightRetreat: {fileID: 0}
   retreatDistance: 100
-  grabRange: 1
+  grabRange: 2.4
   torchLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -231,22 +231,22 @@ MonoBehaviour:
   - position: {x: -0.5, y: 0.5, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.5097, y: -0.4914, z: 0}
+  - position: {x: -0.5044, y: -0.4969, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.5018, y: -0.5044, z: 0}
+  - position: {x: 0.4991, y: -0.5056, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.5093, y: 0.5094, z: 0}
+  - position: {x: 0.4991, y: 0.4963, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.5037, y: 0.5068, z: 0}
+  - position: {x: -0.4954, y: 0.499, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000003000100010003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: -0.00020000339, y: 0.0024999976, z: 0}
-    m_Extent: {x: 0.5095, y: 0.5069, z: 0}
+    m_Center: {x: -0.0022000074, y: -0.0027999878, z: 0}
+    m_Extent: {x: 0.5022, y: 0.5028, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

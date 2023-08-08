@@ -47,6 +47,16 @@ public class Ghost : NetworkBehaviour
             torch.transform.position = transform.position;
         }
 
+        if (ghostRb.velocity.x > 0 && !ghostAn.GetCurrentAnimatorStateInfo(0).IsName("GhostLick"))
+        {
+            FlipSpriteServerRpc(true);
+        }
+
+        if (ghostRb.velocity.x < 0 && !ghostAn.GetCurrentAnimatorStateInfo(0).IsName("GhostLick"))
+        {
+            FlipSpriteServerRpc(false);
+        }
+
         if (torch!= null)
         {
             if (isChasing)
@@ -167,6 +177,20 @@ public class Ghost : NetworkBehaviour
         
     }
 
+
+    [ServerRpc(RequireOwnership = false)]
+    private void FlipSpriteServerRpc(bool isXFlipped)
+    {
+        FlipSpriteClientRpc(isXFlipped);
+    }
+        
+
+    [ClientRpc]
+    private void FlipSpriteClientRpc(bool isXFlipped)
+    {
+        this.GetComponent<SpriteRenderer>().flipX = isXFlipped;
+    }
+
     [ServerRpc(RequireOwnership = false)]
     private void GiveTorchToHostServerRpc()
     {
@@ -187,8 +211,11 @@ public class Ghost : NetworkBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawLine(torch.transform.position, transform.position);
-        Gizmos.DrawSphere(transform.position, grabRange);
+        if (torch!= null)
+        {
+            Gizmos.DrawLine(torch.transform.position, transform.position);
+        }
+        Gizmos.DrawWireSphere(transform.position, grabRange);
     }
 
     [ServerRpc(RequireOwnership = false)]
