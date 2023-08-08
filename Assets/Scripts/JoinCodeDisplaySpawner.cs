@@ -11,6 +11,7 @@ public class JoinCodeDisplaySpawner : NetworkBehaviour
         Debug.Log(Static_LobbyData.LobbyCode);
         if (!Static_LobbyData.isEverythingSpawned)
         {
+            Debug.Log("spawned join code yrr");
             GameObject canvas = Instantiate(codeCanvas, Vector3.zero, Quaternion.identity);
             canvas.GetComponent<NetworkObject>().Spawn();
         }
