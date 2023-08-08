@@ -77,7 +77,7 @@ public class DisconnectController : NetworkBehaviour
     [ClientRpc]
     private void MovePlayerClientRpc()
     {
-        GameObject localPlayer = GameObject.FindWithTag(NetworkManager.Singleton.LocalClientId.ToString());
+        GameObject localPlayer = GameObject.Find(NetworkManager.Singleton.LocalClientId.ToString());
         if (localPlayer.GetComponent<RelativeJoint2D>() != null)
         {
             localPlayer.GetComponent<PlayerNetwork>().DropTorch();
