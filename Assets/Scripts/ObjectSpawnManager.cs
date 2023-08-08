@@ -21,6 +21,8 @@ public class ObjectSpawnManager : NetworkBehaviour
 
         spawnGameObjects += SpawnDoorsAndKeys;
 
+        spawnGameObjects += SpawnCanvas;
+
         //spawn all the objects
         spawnGameObjects?.Invoke();
     }
@@ -44,6 +46,19 @@ public class ObjectSpawnManager : NetworkBehaviour
                 GameObject theThing = Instantiate(thing);
                 theThing.GetComponent<NetworkObject>().Spawn();
             }
+        }
+
+    }
+
+    [SerializeField] GameObject codeCanvas;
+    public void SpawnCanvas()
+    {
+        Debug.Log(Static_LobbyData.LobbyCode);
+        if (this.IsOwner && !Static_LobbyData.isEverythingSpawned)
+        {
+            Debug.Log("spawned join code yrr");
+            GameObject canvas = Instantiate(codeCanvas, Vector3.zero, Quaternion.identity);
+            canvas.GetComponent<NetworkObject>().Spawn();
         }
 
     }

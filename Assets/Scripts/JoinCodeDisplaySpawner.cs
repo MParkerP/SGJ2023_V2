@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class JoinCodeDisplaySpawner : NetworkBehaviour
 {
-    [SerializeField] GameObject codeCanvas;
+/*    [SerializeField] GameObject codeCanvas;
     public void SpawnCanvas()
     {
         Debug.Log(Static_LobbyData.LobbyCode);
-        if (!Static_LobbyData.isEverythingSpawned)
+        if (this.IsOwner && !Static_LobbyData.isEverythingSpawned)
         {
             Debug.Log("spawned join code yrr");
             GameObject canvas = Instantiate(codeCanvas, Vector3.zero, Quaternion.identity);
             canvas.GetComponent<NetworkObject>().Spawn();
         }
 
-    }
+    }*/
 }
