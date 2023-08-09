@@ -20,6 +20,10 @@ public class CameraCheckpoint : MonoBehaviour
     [SerializeField] private string direction;
     //[SerializeField] private bool isMoving = false;
     [SerializeField] private GameObject cameraController;
+    [SerializeField] private bool isChangeSize;
+    [SerializeField] private float targetCamSize;
+    [SerializeField] private float growthInterval;
+    [SerializeField] private float cameraGrowthDelay;
 
     public int numPlayers;
     public int numPlayersFiltered;
@@ -33,6 +37,7 @@ public class CameraCheckpoint : MonoBehaviour
 
         if (playersFiltered.Count >= requiredPlayers && !cameraController.GetComponent<CameraCheckpointController>().isCameraMoving)
         {
+            StartCoroutine(sizeCamera(targetCamSize));
             switch (direction)
             {
                 case "x":
@@ -77,11 +82,24 @@ public class CameraCheckpoint : MonoBehaviour
                 if (targetPosition.y > mainCamera.transform.position.y) { mainCamera.transform.position += new Vector3(0, cameraShiftInterval); }
                 if (targetPosition.y < mainCamera.transform.position.y) { mainCamera.transform.position -= new Vector3(0, cameraShiftInterval); }
             }
-
             yield return new WaitForSeconds(cameraShiftDelay);
         }
         cameraController.GetComponent<CameraCheckpointController>().isCameraMoving = false;
         yield return new WaitForSeconds(0.001f);
+    }
+
+    IEnumerator sizeCamera(float targetSize)
+    {
+        if (isChangeSize)
+        {
+            while (Math.Abs(mainCamera.orthographicSize - targetCamSize) >= 0.2f)
+            {
+                Debug.Log("attempting to size camera");
+                if (mainCamera.orthographicSize < targetCamSize) { mainCamera.orthographicSize += growthInterval; }
+                if (mainCamera.orthographicSize > targetCamSize) { mainCamera.orthographicSize -= growthInterval; }
+                yield return new WaitForSeconds(cameraGrowthDelay);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
