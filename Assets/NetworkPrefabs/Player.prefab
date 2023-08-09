@@ -273,7 +273,7 @@ Rigidbody2D:
   m_GravityScale: 4
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1196483213351957962
@@ -509,22 +509,22 @@ MonoBehaviour:
   - position: {x: -0.114567846, y: 0.17097253, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1115, y: -0.0379, z: 0}
+  - position: {x: -0.1116, y: -0.0374, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.12, y: -0.0393, z: 0}
+  - position: {x: 0.1245, y: -0.0451, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1264, y: 0.1779, z: 0}
+  - position: {x: 0.1337, y: 0.1685, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1187, y: 0.1623, z: 0}
+  - position: {x: -0.1116, y: 0.1784, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000002000100000003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.004093632, y: 0.0693, z: 0}
-    m_Extent: {x: 0.12279363, y: 0.1086, z: 0}
+    m_Center: {x: 0.009566076, y: 0.066649996, z: 0}
+    m_Extent: {x: 0.12413392, y: 0.11175, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
