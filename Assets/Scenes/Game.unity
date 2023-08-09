@@ -400,6 +400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdingDistance: 20
+  side: left
 --- !u!4 &14265872
 Transform:
   m_ObjectHideFlags: 0
@@ -1760,6 +1761,8 @@ MonoBehaviour:
   laserXPos: 0
   leftSpawn: {fileID: 14265870}
   rightSpawn: {fileID: 1612356741}
+  isGhostSpawning: 0
+  spawnDelay: 0
 --- !u!4 &74800146
 Transform:
   m_ObjectHideFlags: 0
@@ -49937,6 +49940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdingDistance: 20
+  side: right
 --- !u!4 &1612356743
 Transform:
   m_ObjectHideFlags: 0

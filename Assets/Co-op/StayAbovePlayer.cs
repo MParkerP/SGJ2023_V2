@@ -7,10 +7,14 @@ public class StayAbovePlayer : MonoBehaviour
     private GameObject[] playerList;
     [SerializeField] private float holdingDistance;
 
+    private GameObject torch;
+    [SerializeField] public string side;
+
 
     private void Update()
     {
-        StayAbovePlayers();
+        //StayAbovePlayers();
+        StayOverTorch(side);
     }
 
     private float getAveragerPlayerY()
@@ -34,5 +38,25 @@ public class StayAbovePlayer : MonoBehaviour
             transform.position = new Vector2(transform.position.x, getAveragerPlayerY() + holdingDistance);
         }
 
+    }
+
+    private void StayOverTorch(string side)
+    {
+        torch = GameObject.Find("TorchSprite");
+        if (torch != null)
+        {
+            if (side == "left")
+            {
+                transform.position = new Vector2(torch.transform.position.x - holdingDistance, torch.transform.position.y + holdingDistance);
+            }
+
+            if (side == "right")
+            {
+                transform.position = new Vector2(torch.transform.position.x + holdingDistance, torch.transform.position.y + holdingDistance);
+            }
+                
+        }
+
+        
     }
 }

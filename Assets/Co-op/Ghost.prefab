@@ -146,9 +146,10 @@ MonoBehaviour:
   chaseSpeed: 3.5
   retreatSpeed: 7
   isChasing: 1
+  isDirectionChosen: 0
   leftRetreat: {fileID: 0}
   rightRetreat: {fileID: 0}
-  retreatDistance: 100
+  retreatDistance: 50
   grabRange: 2.4
   torchLayer:
     serializedVersion: 2
@@ -231,22 +232,22 @@ MonoBehaviour:
   - position: {x: -0.5, y: 0.5, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.5044, y: -0.4969, z: 0}
+  - position: {x: -0.4979, y: -0.5009, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.4991, y: -0.5056, z: 0}
+  - position: {x: 0.5045, y: -0.4914, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.4991, y: 0.4963, z: 0}
+  - position: {x: 0.4977, y: 0.4998, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.4954, y: 0.499, z: 0}
+  - position: {x: -0.4951, y: 0.4925, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000003000100010003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: -0.0022000074, y: -0.0027999878, z: 0}
-    m_Extent: {x: 0.5022, y: 0.5028, z: 0}
+    m_Center: {x: 0.002249986, y: -0.00044998527, z: 0}
+    m_Extent: {x: 0.50224996, y: 0.50045, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

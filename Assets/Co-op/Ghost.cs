@@ -4,6 +4,7 @@ using System.Xml.Serialization;
 using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = System.Random;
 
 public class Ghost : NetworkBehaviour
 {
@@ -15,6 +16,7 @@ public class Ghost : NetworkBehaviour
     private Rigidbody2D ghostRb;
 
     [SerializeField] public bool isChasing;
+    [SerializeField] public bool isDirectionChosen = false;
 
     [SerializeField] private GameObject leftRetreat;
     [SerializeField] private GameObject rightRetreat;
@@ -69,7 +71,7 @@ public class Ghost : NetworkBehaviour
             }
         }
 
-        if (!isChasing && ((transform.position.magnitude - torch.transform.position.magnitude) > retreatDistance))
+        if (!isChasing && (new Vector2(transform.position.x - torch.transform.position.x, transform.position.y - torch.transform.position.y).magnitude > retreatDistance))
         {
             GetComponent<NetworkObject>().Despawn();
         }
@@ -112,14 +114,38 @@ public class Ghost : NetworkBehaviour
     private void Retreat()
     {
         GameObject nearestRetreat = FindNearesetRetreat();
-        float laserXPos = GameObject.Find("laser").transform.position.x;
-        if (nearestRetreat.transform.position.x > laserXPos)
+        GameObject laser = GameObject.Find("laser");
+
+        if (laser != null)
         {
-            ghostRb.velocity = new Vector2(1,1).normalized * retreatSpeed;
+            float laserXPos = laser.transform.position.x;
+            if (nearestRetreat.transform.position.x > laserXPos)
+            {
+                ghostRb.velocity = new Vector2(1, 1).normalized * retreatSpeed;
+            }
+            else
+            {
+                ghostRb.velocity = new Vector2(-1, 1).normalized * retreatSpeed;
+            }
         }
         else
         {
-            ghostRb.velocity = new Vector2(-1,-1).normalized * retreatSpeed;
+            if (torch != null && !isDirectionChosen)
+            {
+                Random rnd = new Random();
+                int randomPosition = rnd.Next(0,2);
+                isDirectionChosen = true;
+
+                switch (randomPosition)
+                {
+                    case 0:
+                        ghostRb.velocity = new Vector2(1, 1).normalized * retreatSpeed;
+                        break;
+                    case 1:
+                        ghostRb.velocity = new Vector2(-1, 1).normalized * retreatSpeed;
+                        break;
+                }
+            }
         }
     }
 
