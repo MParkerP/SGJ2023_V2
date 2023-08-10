@@ -24,6 +24,8 @@ public class CameraCheckpoint : MonoBehaviour
     [SerializeField] private float targetCamSize;
     [SerializeField] private float growthInterval;
     [SerializeField] private float cameraGrowthDelay;
+    [SerializeField] private float allowedShiftError;
+    [SerializeField] private float allowedSizeError;
 
     public int numPlayers;
     public int numPlayersFiltered;
@@ -66,7 +68,7 @@ public class CameraCheckpoint : MonoBehaviour
     IEnumerator DriftCamera(Vector3 targetPosition)
     {
         cameraController.GetComponent<CameraCheckpointController>().isCameraMoving = true;
-        while (Math.Abs(mainCamera.transform.position.x - targetPosition.x) >= 0.1f || Math.Abs(mainCamera.transform.position.y - targetPosition.y) >= 0.1f)
+        while (Math.Abs(mainCamera.transform.position.x - targetPosition.x) > allowedShiftError || Math.Abs(mainCamera.transform.position.y - targetPosition.y) > allowedShiftError)
         {
 
             Debug.Log("attempting to move camera");
@@ -88,7 +90,7 @@ public class CameraCheckpoint : MonoBehaviour
         if (isChangeSize)
         {
             cameraController.GetComponent<CameraCheckpointController>().isCameraGrowing = true;
-            while (Math.Abs(mainCamera.orthographicSize - targetCamSize) >= 0.1f)
+            while (Math.Abs(mainCamera.orthographicSize - targetCamSize) > allowedSizeError)
             {
                 Debug.Log("attempting to size camera");
                 if (mainCamera.orthographicSize < targetSize) { mainCamera.orthographicSize += growthInterval; }
