@@ -14,9 +14,9 @@ public class CameraCheckpoint : MonoBehaviour
     private List<GameObject> playersFiltered = new List<GameObject>();
 
     [SerializeField] private int requiredPlayers;
-    [SerializeField] private float cameraSpeed;
     [SerializeField] private float cameraShiftDelay;
-    [SerializeField] private float cameraShiftInterval;
+    [SerializeField] private float cameraX_ShiftInterval;
+    [SerializeField] private float cameraY_ShiftInterval;
     [SerializeField] private string direction;
     //[SerializeField] private bool isMoving = false;
     [SerializeField] private GameObject cameraController;
@@ -35,20 +35,18 @@ public class CameraCheckpoint : MonoBehaviour
 
         playersFiltered = filterPlayerList();
 
-        if (playersFiltered.Count >= requiredPlayers && !cameraController.GetComponent<CameraCheckpointController>().isCameraMoving)
+        if (playersFiltered.Count >= requiredPlayers)
         {
-            StartCoroutine(sizeCamera(targetCamSize));
-            switch (direction)
+            if (!cameraController.GetComponent<CameraCheckpointController>().isCameraMoving)
             {
-                case "x":
-                    cameraController.GetComponent<CameraCheckpointController>().isCameraMoving = true;
-                    StartCoroutine(driftCamera(cameraPosition, "x"));
-                    break;
+                StartCoroutine(DriftCamera(cameraPosition));
+                
+            }
 
-                case "y":
-                    cameraController.GetComponent<CameraCheckpointController>().isCameraMoving = true;
-                    StartCoroutine(driftCamera(cameraPosition, "y"));
-                    break;
+            if (!cameraController.GetComponent<CameraCheckpointController>().isCameraGrowing)
+            {
+                StartCoroutine(SizeCamera(targetCamSize));
+                
             }
         }
     }
@@ -65,40 +63,40 @@ public class CameraCheckpoint : MonoBehaviour
         StartCoroutine(driftCamera(cameraPosition, direction));
     }*/
 
-    IEnumerator driftCamera(Vector3 targetPosition, string direction)
+    IEnumerator DriftCamera(Vector3 targetPosition)
     {
-        while (Math.Abs((mainCamera.transform.position - targetPosition).magnitude) >= 0.2f)
+        cameraController.GetComponent<CameraCheckpointController>().isCameraMoving = true;
+        while (Math.Abs(mainCamera.transform.position.x - targetPosition.x) >= 0.1f || Math.Abs(mainCamera.transform.position.y - targetPosition.y) >= 0.1f)
         {
-            if (direction == "x") 
-            {
-                Debug.Log("attempting to move horizontally");
-                if (targetPosition.x > mainCamera.transform.position.x) { mainCamera.transform.position += new Vector3(cameraShiftInterval, 0); }
-                if (targetPosition.x < mainCamera.transform.position.x) { mainCamera.transform.position -= new Vector3(cameraShiftInterval, 0); }
-            }
 
-            if (direction == "y") 
-            {
-                Debug.Log("attempting to move vertically");
-                if (targetPosition.y > mainCamera.transform.position.y) { mainCamera.transform.position += new Vector3(0, cameraShiftInterval); }
-                if (targetPosition.y < mainCamera.transform.position.y) { mainCamera.transform.position -= new Vector3(0, cameraShiftInterval); }
-            }
+            Debug.Log("attempting to move camera");
+
+            if (targetPosition.x > mainCamera.transform.position.x) { mainCamera.transform.position += new Vector3(cameraX_ShiftInterval, 0); }
+            if (targetPosition.x < mainCamera.transform.position.x) { mainCamera.transform.position -= new Vector3(cameraX_ShiftInterval, 0); }
+
+            if (targetPosition.y > mainCamera.transform.position.y) { mainCamera.transform.position += new Vector3(0, cameraY_ShiftInterval); }
+            if (targetPosition.y < mainCamera.transform.position.y) { mainCamera.transform.position -= new Vector3(0, cameraY_ShiftInterval); }
+
             yield return new WaitForSeconds(cameraShiftDelay);
         }
         cameraController.GetComponent<CameraCheckpointController>().isCameraMoving = false;
         yield return new WaitForSeconds(0.001f);
     }
 
-    IEnumerator sizeCamera(float targetSize)
+    IEnumerator SizeCamera(float targetSize)
     {
         if (isChangeSize)
         {
-            while (Math.Abs(mainCamera.orthographicSize - targetCamSize) >= 0.2f)
+            cameraController.GetComponent<CameraCheckpointController>().isCameraGrowing = true;
+            while (Math.Abs(mainCamera.orthographicSize - targetCamSize) >= 0.1f)
             {
                 Debug.Log("attempting to size camera");
-                if (mainCamera.orthographicSize < targetCamSize) { mainCamera.orthographicSize += growthInterval; }
-                if (mainCamera.orthographicSize > targetCamSize) { mainCamera.orthographicSize -= growthInterval; }
+                if (mainCamera.orthographicSize < targetSize) { mainCamera.orthographicSize += growthInterval; }
+                if (mainCamera.orthographicSize > targetSize) { mainCamera.orthographicSize -= growthInterval; }
                 yield return new WaitForSeconds(cameraGrowthDelay);
             }
+
+            cameraController.GetComponent<CameraCheckpointController>().isCameraGrowing = false;
         }
     }
 

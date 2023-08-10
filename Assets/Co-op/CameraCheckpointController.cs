@@ -5,4 +5,5 @@ using UnityEngine;
 public class CameraCheckpointController : MonoBehaviour
 {
     [SerializeField] public bool isCameraMoving;
+    [SerializeField] public bool isCameraGrowing;
 }
