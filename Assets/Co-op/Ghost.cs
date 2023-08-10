@@ -76,7 +76,11 @@ public class Ghost : NetworkBehaviour
             GetComponent<NetworkObject>().Despawn();
         }
 
-        distanceToTorch = new Vector3(transform.position.x - torch.transform.position.x, transform.position.y - torch.transform.position.y).magnitude;
+        if (torch!= null)
+        {
+            distanceToTorch = new Vector3(transform.position.x - torch.transform.position.x, transform.position.y - torch.transform.position.y).magnitude;
+        }
+        
         if (distanceToTorch < grabRange && !isHoldingTorch)
         {
             StealTorch();
@@ -171,35 +175,38 @@ public class Ghost : NetworkBehaviour
 
     private void StealTorch()
     {
-        ghostAn.SetTrigger("Lick");
-        if (torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch != null)
+        if (torch != null)
         {
-            GameObject playerHoldingTorch = torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch;
-            playerHoldingTorch.GetComponent<PlayerNetwork>().DropTorch();
+            ghostAn.SetTrigger("Lick");
+            if (torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch != null)
+            {
+                GameObject playerHoldingTorch = torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch;
+                playerHoldingTorch.GetComponent<PlayerNetwork>().DropTorch();
+            }
+
+            SetTorchBeingHeldBoolServerRpc(true);
+            CapsuleCollider2D torchCollider = torch.GetComponent<CapsuleCollider2D>();
+            Rigidbody2D torchRb = torch.GetComponent<Rigidbody2D>();
+
+            if (torch.transform.parent.gameObject.GetComponent<NetworkObject>().OwnerClientId != 0)
+            {
+                GiveTorchToHostServerRpc();
+                SetTorchPositionServerRpc();
+            }
+
+            torchCollider.enabled = false;
+            torch.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            torch.transform.position = transform.position + torchHoldingPoint;
+            torchRb.mass = 0;
+
+            RelativeJoint2D joint = this.AddComponent<RelativeJoint2D>();
+            joint.enableCollision = false;
+            joint.autoConfigureOffset = false;
+            joint.linearOffset = torchHoldingPoint;
+            joint.connectedBody = torchRb;
+
+            isHoldingTorch = true;
         }
-
-        SetTorchBeingHeldBoolServerRpc(true);
-        CapsuleCollider2D torchCollider = torch.GetComponent<CapsuleCollider2D>();
-        Rigidbody2D torchRb = torch.GetComponent<Rigidbody2D>();
-
-        if (torch.transform.parent.gameObject.GetComponent<NetworkObject>().OwnerClientId!=0)
-        {
-            GiveTorchToHostServerRpc();
-            SetTorchPositionServerRpc();
-        }
-
-        torchCollider.enabled = false;
-        torch.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-        torch.transform.position = transform.position + torchHoldingPoint;
-        torchRb.mass = 0;
-
-        RelativeJoint2D joint = this.AddComponent<RelativeJoint2D>();
-        joint.enableCollision = false;
-        joint.autoConfigureOffset = false;
-        joint.linearOffset = torchHoldingPoint;
-        joint.connectedBody = torchRb;
-
-        isHoldingTorch = true;
         
     }
 
