@@ -916,6 +916,17 @@ Transform:
   - {fileID: 512356510}
   - {fileID: 1172528270}
   - {fileID: 715930367}
+  - {fileID: 997502180}
+  - {fileID: 1259937802}
+  - {fileID: 965425066}
+  - {fileID: 494081151}
+  - {fileID: 2035600198}
+  - {fileID: 1235712228}
+  - {fileID: 1098687516}
+  - {fileID: 1037771529}
+  - {fileID: 1892159874}
+  - {fileID: 1080624979}
+  - {fileID: 1506059266}
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1738,7 +1749,7 @@ MonoBehaviour:
   laserXPos: 0
   leftSpawn: {fileID: 14265870}
   rightSpawn: {fileID: 1612356741}
-  isGhostSpawning: 0
+  isGhostSpawning: 1
   spawnDelay: 30
 --- !u!4 &74800146
 Transform:
@@ -3555,7 +3566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 261.92, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -3642,7 +3653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -83.6, y: 43.4, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.2
   cameraY_ShiftInterval: 0.025
@@ -7821,7 +7832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 280.43, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -8259,7 +8270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 306.9, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -14331,7 +14342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -146.3, y: 43.4, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.2
   cameraY_ShiftInterval: 0.025
@@ -14633,7 +14644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 218.31, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -15501,7 +15512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 292.82, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -16572,7 +16583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 29.9, y: 65.4, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -16593,13 +16604,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494081148}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18, y: 76.5, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.8, y: 36.4, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &499062909
 GameObject:
@@ -27406,7 +27417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 202.38, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -31988,7 +31999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -11.4, y: 62.6, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -32009,13 +32020,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965425063}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.4, y: 63.2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.599998, y: 23.100002, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &979804354
 PrefabInstance:
@@ -32786,7 +32797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -22, y: 40.7, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -32807,13 +32818,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997502177}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22, y: 46.21, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.2, y: 6.1100006, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &997780222
 GameObject:
@@ -34457,7 +34468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -77.2, y: 130.4, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -34478,13 +34489,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037771526}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.2, y: 114.7, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -43.4, y: 74.6, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 101
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1047577362
 GameObject:
@@ -35122,7 +35133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -33.5, y: 157.4, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -35143,13 +35154,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080624976}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.6, y: 145.2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23.8, y: 105.1, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085344677
 GameObject:
@@ -35782,7 +35793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -31.3, y: 111.2, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -35803,13 +35814,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098687513}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 114.8, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.1000004, y: 74.700005, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107268753
 GameObject:
@@ -38518,7 +38529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -254.1, y: 43.5, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.2
   cameraY_ShiftInterval: 0.025
@@ -40026,7 +40037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 29.6, y: 97.6, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -40047,13 +40058,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235712225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.5, y: 97.5, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 51.3, y: 57.4, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1238517398
 GameObject:
@@ -40166,7 +40177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 225.19, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -40421,7 +40432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 31, y: 46.21, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -40442,13 +40453,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259937799}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.6, y: 46.21, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.4, y: 6.1100006, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1267025575
 PrefabInstance:
@@ -46125,7 +46136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 324.42, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -49011,7 +49022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 20.5, y: 173.6, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -49032,13 +49043,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506059263}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.3, y: 151.6, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 46.1, y: 111.50001, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 104
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1508678207
 PrefabInstance:
@@ -51988,7 +51999,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572375586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.49998, y: 95.399956, z: 0}
+  m_LocalPosition: {x: -339.9, y: 32.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52588,7 +52599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 268.38, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -56054,7 +56065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -337.88, y: 34.27, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.2
   cameraY_ShiftInterval: 0.025
@@ -62289,7 +62300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -77.2, y: 153.4, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -62310,13 +62321,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892159871}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -74.7, y: 145.2, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -68.899994, y: 105.1, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 102
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1892870163
 PrefabInstance:
@@ -62879,7 +62890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 236.88, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -63523,7 +63534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 208.5, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
@@ -64887,7 +64898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -204.6, y: 43.5, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.2
   cameraY_ShiftInterval: 0.025
@@ -67355,7 +67366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -301.6, y: 38.91, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.2
   cameraY_ShiftInterval: 0.025
@@ -68521,7 +68532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: -11.8, y: 84.3, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.25
   cameraY_ShiftInterval: 0.1
@@ -68542,13 +68553,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035600195}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.1, y: 82.9, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -18.3, y: 42.800003, z: -12.26614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_Father: {fileID: 35005986}
+  m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2040871917
 PrefabInstance:
@@ -71946,7 +71957,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 23.82916
+  orthographic size: 8.17
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -71970,7 +71981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130001927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.3, y: 45.4, z: -10}
+  m_LocalPosition: {x: -337.88, y: 34.27, z: -10}
   m_LocalScale: {x: 6.4229712, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72346,7 +72357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2130001930}
   cameraPosition: {x: 51, y: 249, z: -10}
-  requiredPlayers: 1
+  requiredPlayers: 2
   cameraShiftDelay: 0.005
   cameraX_ShiftInterval: 0.1
   cameraY_ShiftInterval: 0.1
