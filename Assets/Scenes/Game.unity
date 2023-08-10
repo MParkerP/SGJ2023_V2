@@ -1750,7 +1750,7 @@ MonoBehaviour:
   leftSpawn: {fileID: 14265870}
   rightSpawn: {fileID: 1612356741}
   isGhostSpawning: 1
-  spawnDelay: 30
+  spawnDelay: 15
 --- !u!4 &74800146
 Transform:
   m_ObjectHideFlags: 0

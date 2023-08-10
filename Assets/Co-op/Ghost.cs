@@ -73,6 +73,7 @@ public class Ghost : NetworkBehaviour
 
         if (!isChasing && (new Vector2(transform.position.x - torch.transform.position.x, transform.position.y - torch.transform.position.y).magnitude > retreatDistance))
         {
+            GameObject.Find("GhostSpawner").GetComponent<GhostSpawner>().StartGhostSpawning();
             GetComponent<NetworkObject>().Despawn();
         }
 

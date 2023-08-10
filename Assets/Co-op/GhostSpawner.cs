@@ -22,15 +22,21 @@ public class GhostSpawner : NetworkBehaviour
         StartCoroutine(GhostSpawning());
     }
 
+    public void StartGhostSpawning()
+    {
+        StartCoroutine(GhostSpawning());
+    }
+
     IEnumerator GhostSpawning()
     {
         yield return new WaitForSeconds(spawnDelay);
-        if (isGhostSpawning) { SpawnGhostForCoop(); }
+        SpawnGhostForCoop();
     }
 
     public void SpawnGhostForCoop()
     {
         if (NetworkManager.Singleton.LocalClientId!=0) { return; }
+        if (!isGhostSpawning) { return; }
 
         GameObject laser = GameObject.Find("laser");
         if (laser != null) { laserXPos = laser.transform.position.x; }
