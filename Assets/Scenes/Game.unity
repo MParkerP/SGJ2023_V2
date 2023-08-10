@@ -30669,7 +30669,7 @@ MonoBehaviour:
   cameraController: {fileID: 1549139040}
   isChangeSize: 1
   targetCamSize: 8.17
-  growthInterval: 0.003
+  growthInterval: 0.1
   cameraGrowthDelay: 0.005
   allowedShiftError: 0.1
   allowedSizeError: 0.1
