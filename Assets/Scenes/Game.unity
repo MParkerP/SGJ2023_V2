@@ -30667,7 +30667,7 @@ MonoBehaviour:
   cameraY_ShiftInterval: 0.1
   direction: y
   cameraController: {fileID: 1549139040}
-  isChangeSize: 0
+  isChangeSize: 1
   targetCamSize: 8.17
   growthInterval: 0.003
   cameraGrowthDelay: 0.005

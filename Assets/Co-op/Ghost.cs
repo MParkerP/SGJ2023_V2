@@ -44,6 +44,8 @@ public class Ghost : NetworkBehaviour
 
     private void Update()
     {
+        GameObject aLaser = GameObject.FindWithTag("Laser");
+        if (aLaser != null ) { isWeakToAttacks= false; }
         if (isHoldingTorch)
         {
             torch.transform.position = transform.position;
@@ -58,6 +60,7 @@ public class Ghost : NetworkBehaviour
         {
             FlipSpriteServerRpc(false);
         }
+
 
         if (torch!= null)
         {
