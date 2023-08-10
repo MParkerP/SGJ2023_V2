@@ -476,9 +476,9 @@ MonoBehaviour:
   - {fileID: 5310697}
   - {fileID: 5310696}
   - {fileID: 5310695}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &5310701
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -1087,7 +1087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41580778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.9, y: 156.9, z: 0}
+  m_LocalPosition: {x: 46.93, y: 329.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1882,7 +1882,7 @@ MonoBehaviour:
   laserXPos: 0
   leftSpawn: {fileID: 14265870}
   rightSpawn: {fileID: 1612356741}
-  isGhostSpawning: 1
+  isGhostSpawning: 0
   spawnDelay: 30
 --- !u!4 &74800146
 Transform:
@@ -2753,9 +2753,9 @@ MonoBehaviour:
   - {fileID: 104409836}
   - {fileID: 104409835}
   - {fileID: 104409834}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!114 &104409839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4700,9 +4700,9 @@ MonoBehaviour:
   - {fileID: 155792008}
   - {fileID: 155792007}
   - {fileID: 155792006}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &155792012
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -6413,9 +6413,9 @@ MonoBehaviour:
   - {fileID: 204302332}
   - {fileID: 204302331}
   - {fileID: 204302330}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &204302336
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -6970,9 +6970,9 @@ MonoBehaviour:
   - {fileID: 242823355}
   - {fileID: 242823354}
   - {fileID: 242823353}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &242823359
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -7785,9 +7785,9 @@ MonoBehaviour:
   - {fileID: 246511665}
   - {fileID: 246511664}
   - {fileID: 246511663}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &246511669
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -9583,9 +9583,9 @@ MonoBehaviour:
   - {fileID: 279259121}
   - {fileID: 279259120}
   - {fileID: 279259119}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &279259125
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -9910,8 +9910,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284870040}
   m_LocalRotation: {x: -0, y: -0, z: 0.87159604, w: 0.49022487}
-  m_LocalPosition: {x: -0.09999992, y: -3.2199993, z: 0.6403687}
-  m_LocalScale: {x: 5.9816675, y: 0.5, z: 1}
+  m_LocalPosition: {x: -0.0494, y: -3.3034, z: 0.6403687}
+  m_LocalScale: {x: 4.1553464, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 260330304}
@@ -10039,7 +10039,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 50.832474, y: 213.84131}
+  m_ConnectedAnchor: {x: 50.88308, y: 213.7579}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: -45
@@ -10706,9 +10706,9 @@ MonoBehaviour:
   - {fileID: 292740654}
   - {fileID: 292740653}
   - {fileID: 292740652}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &292740658
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -13198,9 +13198,9 @@ MonoBehaviour:
   - {fileID: 356318559}
   - {fileID: 356318558}
   - {fileID: 356318557}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &356318563
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -17209,9 +17209,9 @@ MonoBehaviour:
   - {fileID: 439110231}
   - {fileID: 439110230}
   - {fileID: 439110229}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &439110235
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -21092,9 +21092,9 @@ MonoBehaviour:
   - {fileID: 547998341}
   - {fileID: 547998340}
   - {fileID: 547998339}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!114 &547998344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26001,9 +26001,9 @@ MonoBehaviour:
   - {fileID: 687267736}
   - {fileID: 687267735}
   - {fileID: 687267734}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &687267740
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -30085,9 +30085,9 @@ MonoBehaviour:
   - {fileID: 770813063}
   - {fileID: 770813062}
   - {fileID: 770813061}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &770813067
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -30910,9 +30910,9 @@ MonoBehaviour:
   - {fileID: 806361301}
   - {fileID: 806361300}
   - {fileID: 806361299}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &806361305
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -32290,9 +32290,9 @@ MonoBehaviour:
   - {fileID: 840118589}
   - {fileID: 840118588}
   - {fileID: 840118587}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &840118593
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -36481,9 +36481,9 @@ MonoBehaviour:
   - {fileID: 984909658}
   - {fileID: 984909657}
   - {fileID: 984909656}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &984909662
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -38763,9 +38763,9 @@ MonoBehaviour:
   - {fileID: 1025098131}
   - {fileID: 1025098130}
   - {fileID: 1025098129}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &1025098135
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -43696,9 +43696,9 @@ MonoBehaviour:
   - {fileID: 1188138497}
   - {fileID: 1188138496}
   - {fileID: 1188138495}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &1188138501
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -44899,9 +44899,9 @@ MonoBehaviour:
   - {fileID: 1209039737}
   - {fileID: 1209039736}
   - {fileID: 1209039735}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &1209039741
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -46034,7 +46034,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.781485, y: -7.112974}
+  m_Offset: {x: 13.843173, y: -7.112974}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -46045,7 +46045,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50.169804, y: 24.851482}
+  m_Size: {x: 42.046425, y: 24.851482}
   m_EdgeRadius: 0
 --- !u!114 &1259937801
 MonoBehaviour:
@@ -54246,9 +54246,9 @@ MonoBehaviour:
   - {fileID: 1442973106}
   - {fileID: 1442973105}
   - {fileID: 1442973104}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &1442973110
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -60171,7 +60171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572375586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.399994, y: 155.3, z: 0}
+  m_LocalPosition: {x: 44.429993, y: 328.13004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65412,7 +65412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1717539147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66915,9 +66915,9 @@ MonoBehaviour:
   - {fileID: 1745445790}
   - {fileID: 1745445789}
   - {fileID: 1745445788}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &1745445794
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -76294,9 +76294,9 @@ MonoBehaviour:
   - {fileID: 1981403111}
   - {fileID: 1981403110}
   - {fileID: 1981403109}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &1981403115
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -76822,9 +76822,9 @@ MonoBehaviour:
   - {fileID: 1983368567}
   - {fileID: 1983368566}
   - {fileID: 1983368565}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &1983368571
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -78418,9 +78418,9 @@ MonoBehaviour:
   - {fileID: 2020074736}
   - {fileID: 2020074735}
   - {fileID: 2020074734}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &2020074740
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -79215,9 +79215,9 @@ MonoBehaviour:
   - {fileID: 2049096224}
   - {fileID: 2049096223}
   - {fileID: 2049096222}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &2049096228
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -79493,9 +79493,9 @@ MonoBehaviour:
   - {fileID: 2055679820}
   - {fileID: 2055679819}
   - {fileID: 2055679818}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &2055679824
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -81136,9 +81136,9 @@ MonoBehaviour:
   - {fileID: 2100520105}
   - {fileID: 2100520104}
   - {fileID: 2100520103}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &2100520109
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -82445,7 +82445,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 23.82916
+  orthographic size: 8.17
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -82469,7 +82469,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130001927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.5, y: 173.6, z: -10}
+  m_LocalPosition: {x: 51, y: 324.42, z: -10}
   m_LocalScale: {x: 6.4229712, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83518,9 +83518,9 @@ MonoBehaviour:
   - {fileID: 2146588818}
   - {fileID: 2146588817}
   - {fileID: 2146588816}
-  flashInterval: 0.5
+  flashInterval: 0.75
   flashDuration: 0.25
-  platDownTime: 7
+  platDownTime: 3
 --- !u!233 &2146588822
 HingeJoint2D:
   m_ObjectHideFlags: 0

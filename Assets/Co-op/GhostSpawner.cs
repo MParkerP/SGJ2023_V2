@@ -40,7 +40,7 @@ public class GhostSpawner : NetworkBehaviour
 
         GameObject laser = GameObject.Find("laser");
         if (laser != null) { laserXPos = laser.transform.position.x; }
-        GameObject torch = GameObject.FindWithTag("Torch");
+        GameObject torch = GameObject.Find("TorchSprite");
 
         if (torch != null && laser != null)
         {

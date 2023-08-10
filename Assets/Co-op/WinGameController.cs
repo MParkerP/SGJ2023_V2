@@ -29,7 +29,7 @@ public class WinGameController : MonoBehaviour
         playersDetected = Physics2D.OverlapCircleAll(transform.position, detectionRange, playerLayer);
         //torchesDetected = Physics2D.OverlapCircleAll(transform.position, detectionRange, torchLayer);
 
-        distanceToTorch = new Vector2(GameObject.Find("TorchSprite").transform.position.x - transform.position.x, GameObject.FindWithTag("Torch").transform.position.y - transform.position.y).magnitude;
+        distanceToTorch = new Vector2(GameObject.Find("TorchSprite").transform.position.x - transform.position.x, GameObject.Find("TorchSprite").transform.position.y - transform.position.y).magnitude;
 
         if (playersDetected.Length == 4) { isBothPlayersDetected = true;  }
         else { isBothPlayersDetected = false; }
