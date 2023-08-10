@@ -30,6 +30,8 @@ public class GhostSpawner : NetworkBehaviour
 
     public void SpawnGhostForCoop()
     {
+        if (NetworkManager.Singleton.LocalClientId!=0) { return; }
+
         GameObject laser = GameObject.Find("laser");
         if (laser != null) { laserXPos = laser.transform.position.x; }
         GameObject torch = GameObject.FindWithTag("Torch");
