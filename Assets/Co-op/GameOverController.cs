@@ -28,6 +28,8 @@ public class GameOverController : NetworkBehaviour
     private void GameOverClientRpc()
     {
         gameOverScreen.SetActive(true);
+        GetComponent<AudioSource>().Play();
+        GameObject.Find("MusicPlayer").GetComponent<AudioSource>().Stop();
         GameObject localPlayer = GameObject.Find(NetworkManager.Singleton.LocalClientId.ToString());
         localPlayer.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     }

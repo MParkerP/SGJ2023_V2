@@ -37,6 +37,9 @@ public class WinGameController : MonoBehaviour
         if (distanceToTorch <= detectionRange) { isTorchDetected = true; }
         else { isTorchDetected = false; }
 
-        if (isBothPlayersDetected && isTorchDetected) { playerTorchDetectionCallback?.Invoke(); }
+        if (isBothPlayersDetected && isTorchDetected) 
+        {
+            playerTorchDetectionCallback?.Invoke(); 
+        }
     }
 }

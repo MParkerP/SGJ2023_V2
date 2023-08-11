@@ -51,6 +51,8 @@ public class WinGameCamera : NetworkBehaviour
         StartCoroutine(fadeLightOut());
         yield return new WaitForSeconds(5);
         winGameScreen.SetActive(true);
+        GetComponent<AudioSource>().Play();
+        GameObject.Find("MusicPlayer").GetComponent<AudioSource>().Stop();
     }
 
     IEnumerator slideCamera()

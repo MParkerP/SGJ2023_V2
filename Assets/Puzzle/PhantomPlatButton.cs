@@ -32,6 +32,7 @@ public class PhantomPlatButton : NetworkBehaviour
     [ClientRpc]
     private void TogglePhantomPlatsClientRpc()
     {
+        GetComponent<AudioSource>().PlayOneShot(GetComponent<AudioSource>().clip);
         foreach(GameObject phantomPlat in phantomPlats)
         {
             Collider2D[] platColliders = phantomPlat.GetComponentsInChildren<Collider2D>();

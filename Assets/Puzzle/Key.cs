@@ -33,6 +33,7 @@ public class Key : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     private void DestroyKeyServerRpc()
     {
+        GetComponent<AudioSource>().PlayOneShot(GetComponent<AudioSource>().clip);
         GameObject destroyKey = this.gameObject;
         destroyKey.GetComponent<NetworkObject>().Despawn();
     }
