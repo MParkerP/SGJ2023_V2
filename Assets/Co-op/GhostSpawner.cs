@@ -14,7 +14,7 @@ public class GhostSpawner : NetworkBehaviour
     [SerializeField] private GameObject leftSpawn;
     [SerializeField] private GameObject rightSpawn;
 
-    [SerializeField] private bool isGhostSpawning = false;
+    [SerializeField] public bool isGhostSpawning = false;
     [SerializeField] private float spawnDelay;
 
     public override void OnNetworkSpawn()

@@ -17,6 +17,7 @@ public class CoopStartController : MonoBehaviour
     IEnumerator StartCoopLevel()
     {
         laser.SetActive(true);
+        GetComponent<AudioSource>().Play();
         OpenGate(leftDoor, "left");
         OpenGate(rightDoor, "right");
         yield return new WaitForSeconds(2);
@@ -24,7 +25,7 @@ public class CoopStartController : MonoBehaviour
         rightDoor.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
-    private void StartLevel()
+    public void StartLevel()
     {
         StartCoroutine(StartCoopLevel());
     }

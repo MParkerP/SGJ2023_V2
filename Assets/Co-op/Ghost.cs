@@ -32,6 +32,8 @@ public class Ghost : NetworkBehaviour
     private float distanceToTorch;
     public bool isWeakToAttacks;
     private Animator ghostAn;
+    [SerializeField] AudioSource ghostLickSound;
+    [SerializeField] AudioSource ghostHitSound;
 
     public override void OnNetworkSpawn()
     {
@@ -174,6 +176,7 @@ public class Ghost : NetworkBehaviour
 
     public void ScareGhost()
     {
+        ghostHitSound.PlayOneShot(ghostHitSound.clip);
         isChasing = false;
     }
 
@@ -182,6 +185,7 @@ public class Ghost : NetworkBehaviour
         if (torch != null)
         {
             ghostAn.SetTrigger("Lick");
+            ghostLickSound.PlayOneShot(ghostLickSound.clip);
             if (torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch != null)
             {
                 GameObject playerHoldingTorch = torch.transform.parent.gameObject.GetComponent<Torch>().playerHoldingTorch;

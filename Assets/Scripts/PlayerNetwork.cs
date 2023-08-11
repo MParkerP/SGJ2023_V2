@@ -48,6 +48,10 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private GameObject disconnectMessage;
     public bool isShowingDisconnect;
 
+    [SerializeField] private AudioSource attackSound;
+    [SerializeField] private AudioSource jumpSound;
+
+
     //network variables
     private NetworkVariable<int> randomNumber = new NetworkVariable<int>(1, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
 
@@ -131,6 +135,7 @@ public class PlayerNetwork : NetworkBehaviour
     private void Attack()
     {
         playerAn.SetTrigger("Attack");
+        attackSound.PlayOneShot(attackSound.clip);
         Collider2D[] ghostsHit = Physics2D.OverlapCircleAll(grabPoint.transform.position, grabRadius, ghostLayer);
         if (ghostsHit.Length > 0)
         {
@@ -156,6 +161,7 @@ public class PlayerNetwork : NetworkBehaviour
         {
             if (isGrounded)
             {
+                jumpSound.PlayOneShot(jumpSound.clip);
                 playerRb.AddForce(Vector3.up * jumpForce);
                 isGrounded= false;
             }
