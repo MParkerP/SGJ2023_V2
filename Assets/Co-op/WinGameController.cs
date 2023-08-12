@@ -16,7 +16,7 @@ public class WinGameController : MonoBehaviour
 
     [SerializeField] private bool isBothPlayersDetected;
     [SerializeField] private bool isTorchDetected;
-    private bool isTriggered = false;
+    public bool isTriggered = false;
 
     public UnityEvent playerTorchDetectionCallback;
 
@@ -27,21 +27,40 @@ public class WinGameController : MonoBehaviour
 
     private void Update()
     {
-        playersDetected = Physics2D.OverlapCircleAll(transform.position, detectionRange, playerLayer);
-        //torchesDetected = Physics2D.OverlapCircleAll(transform.position, detectionRange, torchLayer);
-
-        distanceToTorch = new Vector2(GameObject.Find("TorchSprite").transform.position.x - transform.position.x, GameObject.Find("TorchSprite").transform.position.y - transform.position.y).magnitude;
-
-        if (playersDetected.Length == 4) { isBothPlayersDetected = true;  }
-        else { isBothPlayersDetected = false; }
-
-        if (distanceToTorch <= detectionRange) { isTorchDetected = true; }
-        else { isTorchDetected = false; }
-
-        if (isBothPlayersDetected && isTorchDetected && !isTriggered) 
+        GameObject torch = GameObject.Find("TorchSprite");
+        if (torch != null)
         {
-            isTriggered = true;
-            playerTorchDetectionCallback?.Invoke(); 
+            playersDetected = Physics2D.OverlapCircleAll(transform.position, detectionRange, playerLayer);
+            //torchesDetected = Physics2D.OverlapCircleAll(transform.position, detectionRange, torchLayer);
+
+            distanceToTorch = new Vector2(GameObject.Find("TorchSprite").transform.position.x - transform.position.x, GameObject.Find("TorchSprite").transform.position.y - transform.position.y).magnitude;
+
+            if (playersDetected.Length == 4) { isBothPlayersDetected = true; }
+            else { isBothPlayersDetected = false; }
+
+            if (distanceToTorch <= detectionRange) { isTorchDetected = true; }
+            else { isTorchDetected = false; }
+
+            if (isBothPlayersDetected && isTorchDetected && !isTriggered && !CheckCamMoving())
+            {
+                StopCamMoving();
+                isTriggered = true;
+                playerTorchDetectionCallback?.Invoke();
+            }
+        }
+    }
+
+    private bool CheckCamMoving()
+    {
+        return GameObject.Find("CameraCheckController").GetComponent<CameraCheckpointController>().isCameraMoving;
+    }
+
+    private void StopCamMoving()
+    {
+        var camCheckpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
+        foreach (var camCheckpoint in camCheckpoints)
+        {
+            camCheckpoint.GetComponent<CameraCheckpoint>().StopAllCoroutines();
         }
     }
 }

@@ -39,13 +39,13 @@ public class CameraCheckpoint : MonoBehaviour
 
         if (playersFiltered.Count >= requiredPlayers)
         {
-            if (!cameraController.GetComponent<CameraCheckpointController>().isCameraMoving)
+            if (!cameraController.GetComponent<CameraCheckpointController>().isCameraMoving && cameraController.GetComponent<CameraCheckpointController>().canMove)
             {
                 StartCoroutine(DriftCamera(cameraPosition));
                 
             }
 
-            if (!cameraController.GetComponent<CameraCheckpointController>().isCameraGrowing)
+            if (!cameraController.GetComponent<CameraCheckpointController>().isCameraGrowing && cameraController.GetComponent<CameraCheckpointController>().canMove)
             {
                 StartCoroutine(SizeCamera(targetCamSize));
                 
@@ -71,7 +71,6 @@ public class CameraCheckpoint : MonoBehaviour
         while (Math.Abs(mainCamera.transform.position.x - targetPosition.x) > allowedShiftError || Math.Abs(mainCamera.transform.position.y - targetPosition.y) > allowedShiftError)
         {
 
-            Debug.Log("attempting to move camera");
 
             if (targetPosition.x > mainCamera.transform.position.x) { mainCamera.transform.position += new Vector3(cameraX_ShiftInterval, 0); }
             if (targetPosition.x < mainCamera.transform.position.x) { mainCamera.transform.position -= new Vector3(cameraX_ShiftInterval, 0); }
@@ -92,7 +91,6 @@ public class CameraCheckpoint : MonoBehaviour
             cameraController.GetComponent<CameraCheckpointController>().isCameraGrowing = true;
             while (Math.Abs(mainCamera.orthographicSize - targetCamSize) > allowedSizeError)
             {
-                Debug.Log("attempting to size camera");
                 if (mainCamera.orthographicSize < targetSize) { mainCamera.orthographicSize += growthInterval; }
                 if (mainCamera.orthographicSize > targetSize) { mainCamera.orthographicSize -= growthInterval; }
                 yield return new WaitForSeconds(cameraGrowthDelay);

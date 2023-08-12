@@ -9,6 +9,8 @@ TagManager:
   - PlayerBody
   - Ground
   - Ghost
+  - Checkpoint
+  - KeyAndDoor
   layers:
   - Default
   - TransparentFX

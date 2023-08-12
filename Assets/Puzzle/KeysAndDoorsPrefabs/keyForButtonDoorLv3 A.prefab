@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -6874830833365947102}
   m_Layer: 0
   m_Name: keyForButtonDoorLv3 A
-  m_TagString: Untagged
+  m_TagString: KeyAndDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

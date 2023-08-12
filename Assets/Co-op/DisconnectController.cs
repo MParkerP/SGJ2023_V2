@@ -61,10 +61,20 @@ public class DisconnectController : NetworkBehaviour
             NetworkManager.SceneManager.LoadScene("Game", LoadSceneMode.Single);*/
 
             ResetPlayersServerRpc();
+            DespawnDoorAndKeys();
 
             GameObject.FindWithTag("Torch").GetComponent<NetworkObject>().Despawn();
 
             NetworkManager.SceneManager.LoadScene("Game", LoadSceneMode.Single);
+        }
+    }
+
+    public void DespawnDoorAndKeys()
+    {
+        var KeysAndDoors = GameObject.FindGameObjectsWithTag("KeyAndDoor");
+        foreach (var key in KeysAndDoors)
+        {
+            key.GetComponent<NetworkObject>().Despawn();
         }
     }
 

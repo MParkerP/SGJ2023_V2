@@ -7,13 +7,14 @@ using UnityEngine.Rendering.Universal;
 public class WinGameCamera : NetworkBehaviour
 {
     private Vector2 startingPosition = new Vector3(50.94f, 337.7f, -10);
-    private Vector2 endingPosition = new Vector3(50.94f, 354.6f, -10);
+    private Vector2 endingPosition = new Vector3(50.94f, 400.6f, -10);
     [SerializeField] private GameObject globalLightHolder;
     [SerializeField] private Light2D globalLight;
     [SerializeField] private float globalLightIntensity;
     [SerializeField] private GameObject winGameScreen;
 
     private bool isGameWon = false;
+    private bool winStarted = false;
 
     private void Awake()
     {
@@ -24,7 +25,8 @@ public class WinGameCamera : NetworkBehaviour
     {
         if (this.GetComponent<NetworkObject>().IsOwnedByServer && !isGameWon)
         {
-            isGameWon= true;
+            if (NetworkManager.Singleton.LocalClientId != 0) { return; }
+            isGameWon = true;
             FreezePlayerServerRpc();
             WinGameServerRpc();
         }
@@ -39,20 +41,37 @@ public class WinGameCamera : NetworkBehaviour
     [ClientRpc]
     private void WinGameClientRpc()
     {
-        StartCoroutine(WinGame());
+        if (!winStarted)
+        {
+            StartCoroutine(WinGame());
+        }
     }
 
     IEnumerator WinGame()
     {
-        globalLight.intensity = globalLightIntensity;
-        StartCoroutine(slideCamera());
-        yield return new WaitForSeconds(3);
+        winStarted= true;
+        TurnOffLaser();
+        GetRidOfGhost();
+        //globalLight.intensity = globalLightIntensity;
+        //StartCoroutine(slideCamera());
+        //yield return new WaitForSeconds(3);
         //StartCoroutine(fadeLightIn());
-        StartCoroutine(fadeLightOut());
-        yield return new WaitForSeconds(5);
+        //StartCoroutine(fadeLightOut());
+        yield return new WaitForSeconds(5f);
         winGameScreen.SetActive(true);
         GetComponent<AudioSource>().Play();
         GameObject.Find("MusicPlayer").GetComponent<AudioSource>().Stop();
+    }
+
+    private void GetRidOfGhost()
+    {
+        GameObject ghost = GameObject.FindWithTag("Ghost");
+        if (ghost != null)
+        {
+            ghost.GetComponent<Ghost>().ScareGhost();
+            ghost.GetComponent<Ghost>().PlayScareAnim();
+        }
+        GameObject.Find("GhostSpawner").GetComponent<GhostSpawner>().isGhostSpawning = false;
     }
 
     IEnumerator slideCamera()
@@ -84,6 +103,15 @@ public class WinGameCamera : NetworkBehaviour
             yield return new WaitForSeconds(0.2f);
         }
         yield return new WaitForSeconds(0.01f);
+    }
+
+    private void TurnOffLaser()
+    {
+        GameObject laser = GameObject.Find("laser");
+        if (laser != null)
+        {
+            laser.SetActive(false);
+        }
     }
 
     [ServerRpc(RequireOwnership = false)]

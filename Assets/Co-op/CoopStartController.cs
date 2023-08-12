@@ -13,9 +13,13 @@ public class CoopStartController : MonoBehaviour
     [SerializeField] private GameObject leftDoor;
     [SerializeField] private GameObject rightDoor;
     [SerializeField] private GameObject laser;
+    [SerializeField] private bool isStarted = false;
+
+
 
     IEnumerator StartCoopLevel()
     {
+        isStarted= true;
         laser.SetActive(true);
         GetComponent<AudioSource>().Play();
         OpenGate(leftDoor, "left");
@@ -27,32 +31,36 @@ public class CoopStartController : MonoBehaviour
 
     public void StartLevel()
     {
-        StartCoroutine(StartCoopLevel());
+        if (!isStarted) { StartCoroutine(StartCoopLevel()); }
+        
     }
 
     private void Update()
     {
-        if (leftButton.GetComponent<CoopStartButton>().isPressed)
+        if (leftButton != null && rightButton != null)
         {
-            isLeftButtonPressed = true;
-        }
-        else
-        {
-            isLeftButtonPressed = false;
-        }
+            if (leftButton.GetComponent<CoopStartButton>().isPressed)
+            {
+                isLeftButtonPressed = true;
+            }
+            else
+            {
+                isLeftButtonPressed = false;
+            }
 
-        if (rightButton.GetComponent<CoopStartButton>().isPressed)
-        {
-            isRightButtonPressed = true;
-        }
-        else
-        {
-            isRightButtonPressed = false;
-        }
+            if (rightButton.GetComponent<CoopStartButton>().isPressed)
+            {
+                isRightButtonPressed = true;
+            }
+            else
+            {
+                isRightButtonPressed = false;
+            }
 
-        if (isLeftButtonPressed && isRightButtonPressed)
-        {
-            StartLevel();
+            if (isLeftButtonPressed && isRightButtonPressed)
+            {
+                StartLevel();
+            }
         }
     }
 

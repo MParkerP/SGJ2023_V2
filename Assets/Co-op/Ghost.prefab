@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 7853770548889441101}
   - component: {fileID: 2253619073285878788}
   - component: {fileID: 5710943855328582715}
+  - component: {fileID: 719405566621386401}
   m_Layer: 11
   m_Name: Ghost
   m_TagString: Ghost
@@ -237,22 +238,22 @@ MonoBehaviour:
   - position: {x: -0.5, y: 0.5, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.4918, y: -0.5092, z: 0}
+  - position: {x: -0.5064, y: -0.4969, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.5028, y: -0.4991, z: 0}
+  - position: {x: 0.5088, y: -0.5034, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.506, y: 0.494, z: 0}
+  - position: {x: 0.4912, y: 0.5034, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.4928, y: 0.5058, z: 0}
+  - position: {x: -0.4962, y: 0.5002, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000003000100010003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.0029999912, y: -0.0016999841, z: 0}
-    m_Extent: {x: 0.503, y: 0.5075, z: 0}
+    m_Center: {x: 0.0012000203, y: 0, z: 0}
+    m_Extent: {x: 0.5076, y: 0.5034, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -618,3 +619,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &719405566621386401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106588701152306234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransitionStateInfoList:
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: -21233355
+    DestinationState: -1583721572
+    TransitionDuration: 0
+    TriggerNameHash: 590366850
+    TransitionIndex: 0
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: -21233355
+    DestinationState: 814911663
+    TransitionDuration: 0
+    TriggerNameHash: -104450721
+    TransitionIndex: 1
+  m_Animator: {fileID: 5319902157870674281}

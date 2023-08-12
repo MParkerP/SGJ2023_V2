@@ -46,9 +46,14 @@ public class Ghost : NetworkBehaviour
 
     private void Update()
     {
+        if (torch == null)
+        {
+            GetComponent<NetworkObject>().Despawn();
+        }
+
         GameObject aLaser = GameObject.FindWithTag("Laser");
         if (aLaser != null ) { isWeakToAttacks= false; }
-        if (isHoldingTorch)
+        if (isHoldingTorch && torch != null)
         {
             torch.transform.position = transform.position;
         }
@@ -102,7 +107,7 @@ public class Ghost : NetworkBehaviour
             if (collision.CompareTag("Laser"))
             {
                 ScareGhost();
-                ghostAn.SetTrigger("Scare");
+                PlayScareAnim();
             }
         }
 
@@ -115,6 +120,11 @@ public class Ghost : NetworkBehaviour
             }
         }
 
+    }
+    
+    public void PlayScareAnim()
+    {
+        ghostAn.SetTrigger("Scare");
     }
 
     private void ChaseTorch()

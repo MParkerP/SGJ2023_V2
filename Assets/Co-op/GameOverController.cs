@@ -9,6 +9,7 @@ public class GameOverController : NetworkBehaviour
 
     public void GameOver()
     {
+        if (NetworkManager.Singleton.LocalClientId != 0) { return; }
         GameOverServerRpc();
     }
 
@@ -27,6 +28,7 @@ public class GameOverController : NetworkBehaviour
     [ClientRpc]
     private void GameOverClientRpc()
     {
+        
         gameOverScreen.SetActive(true);
         GetComponent<AudioSource>().Play();
         GameObject.Find("MusicPlayer").GetComponent<AudioSource>().Stop();

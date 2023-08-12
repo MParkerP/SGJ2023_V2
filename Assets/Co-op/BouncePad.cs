@@ -22,8 +22,18 @@ public class BouncePad : MonoBehaviour
 
         if (collision.rigidbody && (collision.gameObject.CompareTag("PlayerBody") || collision.gameObject.CompareTag("Torch")))
         {
+            PlaySound();
             Vector3 launchDirection = new Vector3(bounceX - padX, bounceY - padY);
             collision.rigidbody.AddForce(launchDirection.normalized * launchForce);
+        }
+    }
+
+    private void PlaySound()
+    {
+        GameObject soundMaker = GameObject.Find("BouncePadSounds");
+        if (soundMaker != null)
+        {
+            soundMaker.GetComponent<AudioSource>().PlayOneShot(soundMaker.GetComponent<AudioSource>().clip);
         }
     }
 }

@@ -18,6 +18,7 @@ public class TestRelay : MonoBehaviour
     private string joinCode;
     public string attemptedJoinCode;
 
+
     private void Awake()
     {
         ConnectToUnity();
@@ -82,6 +83,7 @@ public class TestRelay : MonoBehaviour
         }
         catch (RelayServiceException e)
         {
+            GameObject.Find("LoadinScreen").SetActive(false);
             Debug.Log(e);
         }
     }

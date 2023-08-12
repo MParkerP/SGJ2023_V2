@@ -7,9 +7,10 @@ public class StartGameController : NetworkBehaviour
 {
     [SerializeField] private GameObject startingDoor;
     [SerializeField] private float doorSpeed;
-
+    private bool isStarted = false;
     public void OpenDoor()
     {
+        if (NetworkManager.Singleton.LocalClientId != 0) { return; }
         OpenDoorServerRpc();
     }
 
@@ -22,11 +23,13 @@ public class StartGameController : NetworkBehaviour
     [ClientRpc]
     private void OpenDoorClientRpc()
     {
-        StartCoroutine(slidingDoor());
+        if (!isStarted) { StartCoroutine(slidingDoor()); }
+        
     }
 
     IEnumerator slidingDoor()
     {
+        isStarted = true;
         GameObject.Find("GhostSpawner").GetComponent<GhostSpawner>().isGhostSpawning= true;
         GetComponent<AudioSource>().Play();
         startingDoor.GetComponent<Rigidbody2D>().velocity = Vector3.down.normalized * doorSpeed;

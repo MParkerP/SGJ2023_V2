@@ -159,6 +159,7 @@ public class PlayerNetwork : NetworkBehaviour
     private void ScareGhostServerRpc(string ghostTag)
     {
         GameObject.FindWithTag("Ghost").GetComponent<Ghost>().ScareGhost();
+        GameObject.FindWithTag("Ghost").GetComponent<Ghost>().PlayScareAnim();
     }
 
     private void Jump()

@@ -27,7 +27,7 @@ public class ObjectSpawnManager : NetworkBehaviour
         spawnGameObjects?.Invoke();
     }
 
-    private void SpawnTorch()
+    public void SpawnTorch()
     {
         if (this.IsOwner)// && !Static_LobbyData.isEverythingSpawned)
         {
@@ -36,7 +36,16 @@ public class ObjectSpawnManager : NetworkBehaviour
         }
     }
 
-    private void SpawnDoorsAndKeys()
+    public void DespawnDoorAndKeys()
+    {
+        var KeysAndDoors = GameObject.FindGameObjectsWithTag("KeyAndDoor");
+        foreach (var key in KeysAndDoors)
+        {
+            key.GetComponent<NetworkObject>().Despawn();
+        }
+    }
+
+    public void SpawnDoorsAndKeys()
     {
         if (this.IsOwner)// && !Static_LobbyData.isEverythingSpawned)
         {
