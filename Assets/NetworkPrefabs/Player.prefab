@@ -370,6 +370,48 @@ MonoBehaviour:
     TransitionDuration: 0
     TriggerNameHash: -743040919
     TransitionIndex: 1
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 906716415
+    DestinationState: -383254623
+    TransitionDuration: 0
+    TriggerNameHash: 1080829965
+    TransitionIndex: 0
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 906716415
+    DestinationState: -277222553
+    TransitionDuration: 0
+    TriggerNameHash: -743040919
+    TransitionIndex: 1
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 2119289918
+    DestinationState: -383254623
+    TransitionDuration: 0
+    TriggerNameHash: 1080829965
+    TransitionIndex: 0
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: 2119289918
+    DestinationState: -277222553
+    TransitionDuration: 0
+    TriggerNameHash: -743040919
+    TransitionIndex: 1
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: -1486516591
+    DestinationState: -277222553
+    TransitionDuration: 0
+    TriggerNameHash: -743040919
+    TransitionIndex: 1
+  - IsCrossFadeExit: 0
+    Layer: 0
+    OriginatingState: -1486516591
+    DestinationState: -383254623
+    TransitionDuration: 0
+    TriggerNameHash: 1080829965
+    TransitionIndex: 2
   m_Animator: {fileID: 8986552372467320217}
 --- !u!82 &6231469901397993069
 AudioSource:
@@ -705,22 +747,22 @@ MonoBehaviour:
   - position: {x: -0.114567846, y: 0.17097253, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1179, y: -0.0316, z: 0}
+  - position: {x: -0.1216, y: -0.0413, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1255, y: -0.0371, z: 0}
+  - position: {x: 0.1222, y: -0.0444, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1202, y: 0.1758, z: 0}
+  - position: {x: 0.1263, y: 0.178, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1162, y: 0.1654, z: 0}
+  - position: {x: -0.121, y: 0.1707, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
   m_Triangles: 000002000100000003000200040008000800040005000900040008000900050006000a00050009000a00060007000b0006000a000b0008000400070008000b000700
   m_LocalBounds:
-    m_Center: {x: 0.0044936314, y: 0.06850328, z: 0}
-    m_Extent: {x: 0.12239363, y: 0.10729671, z: 0}
+    m_Center: {x: 0.00264363, y: 0.0668, z: 0}
+    m_Extent: {x: 0.12424363, y: 0.111200005, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
