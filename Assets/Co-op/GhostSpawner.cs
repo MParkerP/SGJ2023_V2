@@ -15,6 +15,7 @@ public class GhostSpawner : NetworkBehaviour
     [SerializeField] private GameObject rightSpawn;
 
     [SerializeField] public bool isGhostSpawning = false;
+    private bool isFirstGhostSpawned = false;
     [SerializeField] private float spawnDelay;
 
     public override void OnNetworkSpawn()
@@ -31,6 +32,7 @@ public class GhostSpawner : NetworkBehaviour
     {
         yield return new WaitForSeconds(spawnDelay);
         SpawnGhostForCoop();
+        if (!isFirstGhostSpawned) { StartCoroutine(GhostSpawning()); }
     }
 
     public void SpawnGhostForCoop()
@@ -38,6 +40,7 @@ public class GhostSpawner : NetworkBehaviour
         if (NetworkManager.Singleton.LocalClientId!=0) { return; }
         if (!isGhostSpawning) { return; }
 
+        isFirstGhostSpawned = true;
         GameObject laser = GameObject.Find("laser");
         if (laser != null) { laserXPos = laser.transform.position.x; }
         GameObject torch = GameObject.Find("TorchSprite");

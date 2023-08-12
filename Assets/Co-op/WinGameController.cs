@@ -16,6 +16,7 @@ public class WinGameController : MonoBehaviour
 
     [SerializeField] private bool isBothPlayersDetected;
     [SerializeField] private bool isTorchDetected;
+    private bool isTriggered = false;
 
     public UnityEvent playerTorchDetectionCallback;
 
@@ -37,8 +38,9 @@ public class WinGameController : MonoBehaviour
         if (distanceToTorch <= detectionRange) { isTorchDetected = true; }
         else { isTorchDetected = false; }
 
-        if (isBothPlayersDetected && isTorchDetected) 
+        if (isBothPlayersDetected && isTorchDetected && !isTriggered) 
         {
+            isTriggered = true;
             playerTorchDetectionCallback?.Invoke(); 
         }
     }

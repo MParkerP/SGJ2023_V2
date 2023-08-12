@@ -11,6 +11,7 @@ public class Key : NetworkBehaviour
     {
         if (collision.CompareTag("PlayerBody"))
         {
+            playNoiseServerRpc();
             DestroyDoorServerRpc();
             DestroyKeyServerRpc();
         }
@@ -31,9 +32,20 @@ public class Key : NetworkBehaviour
     }
 
     [ServerRpc(RequireOwnership = false)]
+    private void playNoiseServerRpc()
+    {
+        PlayNoiseClientRpc();
+    }
+
+    [ClientRpc]
+    private void PlayNoiseClientRpc() 
+    {
+        GameObject.Find("keySounds").GetComponent<AudioSource>().Play();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
     private void DestroyKeyServerRpc()
     {
-        GetComponent<AudioSource>().PlayOneShot(GetComponent<AudioSource>().clip);
         GameObject destroyKey = this.gameObject;
         destroyKey.GetComponent<NetworkObject>().Despawn();
     }
