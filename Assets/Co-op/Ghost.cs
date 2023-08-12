@@ -102,6 +102,7 @@ public class Ghost : NetworkBehaviour
             if (collision.CompareTag("Laser"))
             {
                 ScareGhost();
+                ghostAn.SetTrigger("Scare");
             }
         }
 
