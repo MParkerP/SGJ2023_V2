@@ -98,8 +98,15 @@ public class PlayerNetwork : NetworkBehaviour
         float horizontalInput = Input.GetAxisRaw("Horizontal");
 
         if (horizontalInput != 0) { isMoving = true; }
-        if (isMoving) { playerRb.velocity = new Vector2(horizontalInput * speed, playerRb.velocity.y); }
+        if (isMoving) { playerRb.velocity = new Vector2(horizontalInput * speed, playerRb.velocity.y);
+            playerAn.SetBool("Walking", true);
+        }
+        else { playerAn.SetBool("Walking", false); }
         if (horizontalInput== 0) { isMoving = false; }
+        if (playerRb.velocity.y < 0 && !isGrounded) { playerAn.SetBool("Falling", true); }
+        else { playerAn.SetBool("Falling", false); }
+        if (playerRb.velocity.y > 0 && !isGrounded) { playerAn.SetBool("Rising", true); }
+        else { playerAn.SetBool("Rising", false); }
 
         if (horizontalInput > 0)
         {

@@ -10635,6 +10635,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torch: {fileID: 8873815187632861478, guid: 62636e6c3f76d544cb664ebe7178fd89, type: 3}
+  doorsAndKeys: []
+  codeCanvas: {fileID: 0}
 --- !u!4 &2084444120
 Transform:
   m_ObjectHideFlags: 0
