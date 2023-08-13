@@ -6,7 +6,6 @@ using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 using System.Threading.Tasks;
-using UnityEditor.PackageManager;
 using UnityEngine.Rendering.Universal;
 using JetBrains.Annotations;
 using UnityEngine.SceneManagement;

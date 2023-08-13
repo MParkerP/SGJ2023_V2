@@ -12,6 +12,7 @@ public class DisconnectController : NetworkBehaviour
     [SerializeField] private GameObject restartButton;
     [SerializeField] private int playersRestartingCount = 0;
     private bool playersConnected = false;
+    private bool isReset = false;
 
     private void Update()
     {
@@ -35,7 +36,7 @@ public class DisconnectController : NetworkBehaviour
             restartButton.SetActive(false);
         }
 
-        if (playersRestartingCount == 2)
+        if (playersRestartingCount == 2 && !isReset)
         {
             RestartGame();
         }
@@ -57,15 +58,20 @@ public class DisconnectController : NetworkBehaviour
     {
         if(NetworkManager.Singleton.LocalClientId == 0)
         {
+            isReset= true;
             /*NetworkManager.SceneManager.UnloadScene(SceneManager.GetActiveScene());
             NetworkManager.SceneManager.LoadScene("Game", LoadSceneMode.Single);*/
 
             ResetPlayersServerRpc();
+            Debug.Log("reset players");
             DespawnDoorAndKeys();
-
-            GameObject.FindWithTag("Torch").GetComponent<NetworkObject>().Despawn();
-
+            Debug.Log("spawned doors and keys");
+            GameObject torch = GameObject.Find("Torch(Clone)");
+            if (torch != null) { torch.GetComponent<NetworkObject>().Despawn(); }
+            else { Debug.Log("did not find torch"); }
+            Debug.Log("despawned torch");
             NetworkManager.SceneManager.LoadScene("Game", LoadSceneMode.Single);
+            Debug.Log("reloaded scene");
         }
     }
 

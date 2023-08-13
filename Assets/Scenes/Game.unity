@@ -27117,6 +27117,7 @@ MonoBehaviour:
     m_Bits: 128
   isBothPlayersDetected: 0
   isTorchDetected: 0
+  isTriggered: 0
   playerTorchDetectionCallback:
     m_PersistentCalls:
       m_Calls:
@@ -38435,7 +38436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4844316182991342303, guid: 2da3dcc22749e7f4280737786d898334, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.14369082
       objectReference: {fileID: 0}
     - target: {fileID: 4844785881582304729, guid: 2da3dcc22749e7f4280737786d898334, type: 3}
       propertyPath: m_AnchorMax.y
@@ -38599,7 +38600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4845276930943762971, guid: 2da3dcc22749e7f4280737786d898334, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000019073486
+      value: -0.00002670288
       objectReference: {fileID: 0}
     - target: {fileID: 4845637959249703711, guid: 2da3dcc22749e7f4280737786d898334, type: 3}
       propertyPath: m_AnchorMax.y
@@ -72340,6 +72341,7 @@ MonoBehaviour:
     m_Bits: 128
   isBothPlayersDetected: 0
   isTorchDetected: 0
+  isTriggered: 0
   playerTorchDetectionCallback:
     m_PersistentCalls:
       m_Calls:

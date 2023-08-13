@@ -10,6 +10,9 @@ public class GameOverController : NetworkBehaviour
     public void GameOver()
     {
         if (NetworkManager.Singleton.LocalClientId != 0) { return; }
+        GameObject ghost = GameObject.FindWithTag("Ghost");
+        if (ghost != null ) { ghost.GetComponent<NetworkObject>().Despawn(); }
+        GameObject.Find("GhostSpawner").GetComponent<GhostSpawner>().isGhostSpawning= false;
         GameOverServerRpc();
     }
 
