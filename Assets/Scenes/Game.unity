@@ -13159,12 +13159,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_UseMotor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_UseLimits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -1.4500003
+      value: -1.2200003
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 47.16
+      value: 46.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_AngleLimits.m_LowerAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_AngleLimits.m_UpperAngle
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433168793725228821, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
@@ -22885,12 +22905,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_UseLimits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -44.939995
+      value: -16.324173
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 75.36
+      value: 104.76443
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_AngleLimits.m_LowerAngle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
@@ -25813,12 +25841,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_UseLimits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -11.891521
+      value: 31.920002
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 104.96302
+      value: 102.69
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
@@ -40098,12 +40130,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_UseLimits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -34.34417
+      value: -53.514175
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 104.76443
+      value: 109.44443
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_AngleLimits.m_LowerAngle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
@@ -70432,12 +70472,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_UseLimits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -21.869999
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 52.1
+      value: 51.9862
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_AngleLimits.m_LowerAngle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
@@ -77393,12 +77441,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_UseLimits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -16.324173
+      value: -34.434174
       objectReference: {fileID: 0}
     - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 104.76443
+      value: 107.06443
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467109583929980706, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
+      propertyPath: m_AngleLimits.m_LowerAngle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48cae351dc0b1e4409563858a919140d, type: 3}
