@@ -47,5 +47,6 @@ public class BouncePadButton : NetworkBehaviour
                 bouncePadComp.launchForce = forceAmount;
             }
         }
+        GetComponent<AudioSource>().PlayOneShot(GetComponent<AudioSource>().clip);
     }
 }
