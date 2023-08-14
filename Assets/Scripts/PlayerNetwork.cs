@@ -149,6 +149,7 @@ public class PlayerNetwork : NetworkBehaviour
             if (ghost.GetComponent<Ghost>().isWeakToAttacks && ghost.GetComponent<Ghost>().isChasing) 
             {
                 ScareGhostServerRpc("Ghost");
+                GhostScaredServerRpc();
             }
         }
 
@@ -159,6 +160,12 @@ public class PlayerNetwork : NetworkBehaviour
     {
         GameObject.FindWithTag("Ghost").GetComponent<Ghost>().ScareGhost();
         GameObject.FindWithTag("Ghost").GetComponent<Ghost>().PlayScareAnim();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void GhostScaredServerRpc()
+    {
+        GameObject.FindWithTag("Ghost").GetComponent<Ghost>().isScared = true;
     }
 
     private void Jump()
