@@ -50,6 +50,7 @@ public class PlayerNetwork : NetworkBehaviour
     [SerializeField] private AudioSource attackSound;
     [SerializeField] private AudioSource jumpSound;
     [SerializeField] private bool isPreventingGrounded = false;
+    private Coroutine preventingGrounded;
 
     //network variables
     private NetworkVariable<int> randomNumber = new NetworkVariable<int>(1, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
@@ -79,8 +80,10 @@ public class PlayerNetwork : NetworkBehaviour
     IEnumerator PreventGrounded()
     {
         isPreventingGrounded = true;
+        Debug.Log("starting prevention");
         yield return new WaitForSeconds(3f);
         if (!isGrounded) { isGrounded = true; }
+        Debug.Log("ungrounded");
         isPreventingGrounded = false;
 
     }
@@ -90,7 +93,8 @@ public class PlayerNetwork : NetworkBehaviour
         //exits the update immeditately if not the owner of the object (other players)
         if (!IsOwner) return;
 
-        if (!isGrounded&& !isPreventingGrounded) { StartCoroutine(PreventGrounded()); }
+        if (!isGrounded&& !isPreventingGrounded) { preventingGrounded = StartCoroutine(PreventGrounded()); }
+        if (playerRb.velocity.y > 0) { StopCoroutine(preventingGrounded); isPreventingGrounded = false;}
 
         //look for player spawn until finds it
         if (isLookingForSpawn)
