@@ -128,7 +128,6 @@ public class Ghost : NetworkBehaviour
     
     public void PlayScareAnim()
     {
-        isScared = true;
         ghostAn.SetTrigger("Scare");
     }
 
