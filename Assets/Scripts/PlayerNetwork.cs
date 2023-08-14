@@ -49,7 +49,7 @@ public class PlayerNetwork : NetworkBehaviour
 
     [SerializeField] private AudioSource attackSound;
     [SerializeField] private AudioSource jumpSound;
-
+    [SerializeField] private bool isPreventingGrounded = false;
 
     //network variables
     private NetworkVariable<int> randomNumber = new NetworkVariable<int>(1, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
@@ -76,10 +76,21 @@ public class PlayerNetwork : NetworkBehaviour
         playerAn = GetComponent<Animator>();
     }
 
+    IEnumerator PreventGrounded()
+    {
+        isPreventingGrounded = true;
+        yield return new WaitForSeconds(3f);
+        if (!isGrounded) { isGrounded = true; }
+        isPreventingGrounded = false;
+
+    }
+
     private void Update()
     {
         //exits the update immeditately if not the owner of the object (other players)
         if (!IsOwner) return;
+
+        if (!isGrounded&& !isPreventingGrounded) { StartCoroutine(PreventGrounded()); }
 
         //look for player spawn until finds it
         if (isLookingForSpawn)
