@@ -112,7 +112,7 @@ public class Ghost : NetworkBehaviour
             }
         }
 
-        if (!isHoldingTorch)
+/*        if (!isHoldingTorch)
         {
             if (collision.CompareTag("Torch"))
             {
@@ -122,7 +122,7 @@ public class Ghost : NetworkBehaviour
                     ScareGhost();
                 }
             }
-        }
+        }*/
 
     }
     
