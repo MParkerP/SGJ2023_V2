@@ -20050,6 +20050,10 @@ PrefabInstance:
       value: StationaryPlat (58)
       objectReference: {fileID: 0}
     - target: {fileID: 1634868977982623686, guid: 2e2a7a004d0fffc42880e87efc3e6cac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634868977982623686, guid: 2e2a7a004d0fffc42880e87efc3e6cac, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -45619,7 +45623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2141774694736095974, guid: 2e2a7a004d0fffc42880e87efc3e6cac, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4721851
+      value: 14.507465
       objectReference: {fileID: 0}
     - target: {fileID: 2141774694736095974, guid: 2e2a7a004d0fffc42880e87efc3e6cac, type: 3}
       propertyPath: m_LocalScale.y
@@ -45627,7 +45631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2141774694736095974, guid: 2e2a7a004d0fffc42880e87efc3e6cac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 63.27
+      value: 63.472
       objectReference: {fileID: 0}
     - target: {fileID: 2141774694736095974, guid: 2e2a7a004d0fffc42880e87efc3e6cac, type: 3}
       propertyPath: m_LocalPosition.y
@@ -49602,18 +49606,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1664654493}
         m_TargetAssemblyTypeName: UISoundsController, Assembly-CSharp
         m_MethodName: PlayPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1790016091}
-        m_TargetAssemblyTypeName: DisconnectController, Assembly-CSharp
-        m_MethodName: DecreaseRestartCountServerRpc
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -80576,7 +80568,7 @@ GameObject:
   - component: {fileID: 1871592198}
   m_Layer: 0
   m_Name: Floor lv 5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91096,18 +91088,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1664654493}
         m_TargetAssemblyTypeName: UISoundsController, Assembly-CSharp
         m_MethodName: PlayPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1790016091}
-        m_TargetAssemblyTypeName: DisconnectController, Assembly-CSharp
-        m_MethodName: DecreaseRestartCountServerRpc
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
