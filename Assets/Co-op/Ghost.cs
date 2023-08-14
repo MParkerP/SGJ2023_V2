@@ -34,6 +34,7 @@ public class Ghost : NetworkBehaviour
     private Animator ghostAn;
     [SerializeField] AudioSource ghostLickSound;
     [SerializeField] AudioSource ghostHitSound;
+    public bool isScared = false;
 
     public override void OnNetworkSpawn()
     {
@@ -92,7 +93,7 @@ public class Ghost : NetworkBehaviour
             distanceToTorch = new Vector3(transform.position.x - torch.transform.position.x, transform.position.y - torch.transform.position.y).magnitude;
         }
         
-        if (distanceToTorch < grabRange && !isHoldingTorch && !isChasing)
+        if (distanceToTorch < grabRange && !isHoldingTorch && !isScared)
         {
             StealTorch();
             ScareGhost();
@@ -127,6 +128,7 @@ public class Ghost : NetworkBehaviour
     
     public void PlayScareAnim()
     {
+        isScared = true;
         ghostAn.SetTrigger("Scare");
     }
 
