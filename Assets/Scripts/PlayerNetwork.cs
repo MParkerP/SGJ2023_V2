@@ -165,6 +165,12 @@ public class PlayerNetwork : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     private void GhostScaredServerRpc()
     {
+        GhostScaredClientRpc();
+    }
+
+    [ClientRpc]
+    private void GhostScaredClientRpc()
+    {
         GameObject.FindWithTag("Ghost").GetComponent<Ghost>().isScared = true;
     }
 
