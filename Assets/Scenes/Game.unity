@@ -6752,7 +6752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8776361470566534662, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_Constraints
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
@@ -30898,7 +30898,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 7
 --- !u!70 &704230826
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -55760,7 +55760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8776361470566534662, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
       propertyPath: m_Constraints
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba506ec12651a14bbf917d9dec4cf8f, type: 3}
@@ -86719,7 +86719,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 6
+  m_Constraints: 7
 --- !u!70 &1983073385
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
